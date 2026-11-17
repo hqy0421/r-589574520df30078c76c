@@ -1,0 +1,842 @@
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E005", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Acquiring new duckdb connection '_test'", "name": "NewConnection", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.752728Z"}}
+{"data": {"relation": {"database": "memory", "identifier": "", "schema": "test17949279228395144837_test_constraints"}}, "info": {"category": "", "code": "E020", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Creating schema \"database: \"memory\"\nschema: \"test17949279228395144837_test_constraints\"\n\"", "name": "SchemaCreation", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.754576Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.758815Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: \n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  ", "name": "SQLQuery", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.760370Z"}}
+{"data": {"connection_state": "init"}, "info": {"category": "", "code": "E037", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Opening a new connection, currently in state init", "name": "NewConnectionOpening", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.761548Z"}}
+{"data": {"elapsed": 0.017405637, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "SQL status: OK in 0.017 seconds", "name": "SQLQueryStatus", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.779063Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.781700Z"}}
+{"data": {"conn_name": "_test", "sql": "BEGIN"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: BEGIN", "name": "SQLQuery", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.783435Z"}}
+{"data": {"elapsed": 0.000501724, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.785418Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.786736Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n    \n        create schema if not exists \"memory\".\"test17949279228395144837_test_constraints\"\n    "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: \n    \n    \n        create schema if not exists \"memory\".\"test17949279228395144837_test_constraints\"\n    ", "name": "SQLQuery", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.788152Z"}}
+{"data": {"elapsed": 0.000592128, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.790169Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E018", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLCommit", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.791997Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.793228Z"}}
+{"data": {"conn_name": "_test", "sql": "COMMIT"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLQuery", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.794360Z"}}
+{"data": {"elapsed": 0.000328716, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "SQL status: OK in 0.000 seconds", "name": "SQLQueryStatus", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.795746Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E010", "extra": {}, "invocation_id": "6dba73fa-fb63-4776-b310-1b530120dffd", "level": "debug", "msg": "On _test: Close", "name": "ConnectionClosed", "pid": 39006, "thread": "MainThread", "ts": "2026-11-17T15:05:22.796820Z"}}
+
+
+============================== 23:05:22.808009 | 03a88e71-5f4c-4c66-9363-549d265de599 ==============================
+[0m23:05:22.808009 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:05:22.809422 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'indirect_selection': 'eager', 'target_path': '/task-cache/dbt-target', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'use_colors': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'False', 'hints_enabled': 'True', 'invocation_command': 'dbt tests/functional/adapter/test_basic.py tests/functional/adapter/test_incremental.py tests/functional/adapter/test_constraints.py -q', 'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'log_path': '/workspace/logs/test17949279228395144837', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-8/profile36', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'debug': 'False'}
+[0m23:05:22.810677 [debug] [MainThread]: Connection '_test' was properly closed.
+[0m23:05:22.815944 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:05:22.871339 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:05:22.893285 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m23:05:23.450630 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:23.458758 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:23.466960 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:23.475050 [info ] [MainThread]: Found 2 models, 521 macros
+[0m23:05:23.476703 [info ] [MainThread]: 
+[0m23:05:23.477869 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:05:23.478976 [info ] [MainThread]: 
+[0m23:05:23.480268 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:05:23.481775 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:05:23.483709 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:05:23.484712 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:05:23.485631 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:23.487697 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:23.489507 [debug] [ThreadPool]: On list_memory: Close
+[0m23:05:23.490856 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949279228395144837_test_constraints)
+[0m23:05:23.491922 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949279228395144837_test_constraints"
+"
+[0m23:05:23.493893 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.494869 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:05:23.495789 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:23.497669 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:23.499371 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.500384 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:23.501851 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:23.502969 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.503914 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+    
+        create schema if not exists "memory"."test17949279228395144837_test_constraints"
+    
+[0m23:05:23.505254 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:23.506806 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:23.508214 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.509675 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:23.511250 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:23.512517 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:23.515073 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949279228395144837_test_constraints, now list_memory_test17949279228395144837_test_constraints)
+[0m23:05:23.517590 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.518671 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:23.521029 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:23.522586 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:23.523664 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:23.524681 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949279228395144837_test_constraints"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949279228395144837_test_constraints'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:05:23.527680 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:23.529388 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: ROLLBACK
+[0m23:05:23.530801 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:23.532224 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:23.533106 [debug] [MainThread]: On master: BEGIN
+[0m23:05:23.533949 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:05:23.535240 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:05:23.536461 [debug] [MainThread]: On master: COMMIT
+[0m23:05:23.537519 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:23.538437 [debug] [MainThread]: On master: COMMIT
+[0m23:05:23.539697 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:23.540551 [debug] [MainThread]: On master: Close
+[0m23:05:23.543473 [debug] [Thread-983]: Began running node model.test.foo
+[0m23:05:23.544753 [info ] [Thread-983]: 1 of 1 START sql table model test17949279228395144837_test_constraints.foo ..... [RUN]
+[0m23:05:23.546255 [debug] [Thread-983]: Re-using an available connection from the pool (formerly list_memory_test17949279228395144837_test_constraints, now model.test.foo)
+[0m23:05:23.547493 [debug] [Thread-983]: Began compiling node model.test.foo
+[0m23:05:23.550986 [debug] [Thread-983]: Writing injected SQL for node "model.test.foo"
+[0m23:05:23.559837 [debug] [Thread-983]: Began executing node model.test.foo
+[0m23:05:23.562393 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.564000 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+select database_name, type from duckdb_databases()
+[0m23:05:23.565375 [debug] [Thread-983]: Opening a new connection, currently in state closed
+[0m23:05:23.567720 [debug] [Thread-983]: SQL status: OK in 0.002 seconds
+[0m23:05:23.569841 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.571250 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:05:23.573683 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.575884 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.577599 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+            select 1 from duckdb_constraints()
+            where constraint_type = 'FOREIGN KEY'
+              and lower(database_name) = lower('memory')
+              and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+              and lower(referenced_table) = lower('foo')
+              and lower(table_name) <> lower(referenced_table)
+            limit 1
+            
+[0m23:05:23.580548 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.587236 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.589228 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+DESCRIBE (select * from (
+        
+select 1 as id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:23.592043 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.596900 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.599213 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+DESCRIBE (select * from (
+        select
+    
+      
+    cast(null as int)
+ as id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:23.602035 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.605423 [debug] [Thread-983]: Writing runtime sql for node "model.test.foo"
+[0m23:05:23.615130 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.616947 [debug] [Thread-983]: On model.test.foo: BEGIN
+[0m23:05:23.618824 [debug] [Thread-983]: SQL status: OK in 0.000 seconds
+[0m23:05:23.620294 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.622509 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+    
+      
+    
+
+    create  table
+      "memory"."test17949279228395144837_test_constraints"."foo__dbt_tmp"
+  
+  (
+    id int primary key
+    
+    )
+ ;
+    
+    
+    insert into "memory"."test17949279228395144837_test_constraints"."foo__dbt_tmp" 
+  (
+    
+      
+      
+      id 
+    
+  )
+ (
+      
+    select id
+    from (
+        
+select 1 as id
+    ) as model_subq
+    );
+  
+[0m23:05:23.625841 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.629352 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.631037 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+alter table "memory"."test17949279228395144837_test_constraints"."foo__dbt_tmp" rename to "foo"
+[0m23:05:23.634072 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.638181 [debug] [Thread-983]: On model.test.foo: COMMIT
+[0m23:05:23.640496 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.642387 [debug] [Thread-983]: On model.test.foo: COMMIT
+[0m23:05:23.645180 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.648590 [debug] [Thread-983]: Using duckdb connection "model.test.foo"
+[0m23:05:23.650281 [debug] [Thread-983]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+      drop table if exists "memory"."test17949279228395144837_test_constraints"."foo__dbt_backup" cascade
+    
+[0m23:05:23.652766 [debug] [Thread-983]: SQL status: OK in 0.001 seconds
+[0m23:05:23.656417 [debug] [Thread-983]: On model.test.foo: Close
+[0m23:05:23.659156 [info ] [Thread-983]: 1 of 1 OK created sql table model test17949279228395144837_test_constraints.foo  [[32mOK[0m in 0.11s]
+[0m23:05:23.660978 [debug] [Thread-983]: Finished running node model.test.foo
+[0m23:05:23.664637 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:23.666236 [debug] [MainThread]: On master: BEGIN
+[0m23:05:23.667673 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:05:23.670222 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m23:05:23.672059 [debug] [MainThread]: On master: COMMIT
+[0m23:05:23.674124 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:23.675751 [debug] [MainThread]: On master: COMMIT
+[0m23:05:23.677785 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:05:23.679706 [debug] [MainThread]: On master: Close
+[0m23:05:23.681336 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:05:23.682963 [debug] [MainThread]: Connection 'model.test.foo' was properly closed.
+[0m23:05:23.685526 [info ] [MainThread]: 
+[0m23:05:23.687261 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m23:05:23.689645 [debug] [MainThread]: Command end result
+[0m23:05:23.866344 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:23.886696 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:23.900442 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:23.908543 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:05:23.910775 [info ] [MainThread]: 
+[0m23:05:23.912345 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:05:23.913693 [info ] [MainThread]: 
+[0m23:05:23.915540 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:05:23.918284 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.1125603, "process_in_blocks": "210228", "process_kernel_time": 14.03047, "process_mem_max_rss": "284420", "process_out_blocks": "4240", "process_user_time": 62.232513}
+[0m23:05:23.922488 [debug] [MainThread]: Command `cli run` succeeded at 23:05:23.922204 after 1.12 seconds
+[0m23:05:23.924541 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:05:23.944878 | 444095a4-7e33-427a-92a2-cb4f9aaf85d7 ==============================
+[0m23:05:23.944878 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:05:23.946421 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'indirect_selection': 'eager', 'target_path': '/task-cache/dbt-target', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'use_colors': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'False', 'hints_enabled': 'True', 'invocation_command': 'dbt tests/functional/adapter/test_basic.py tests/functional/adapter/test_incremental.py tests/functional/adapter/test_constraints.py -q', 'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'log_path': '/workspace/logs/test17949279228395144837', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-8/profile36', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'debug': 'False'}
+[0m23:05:23.954017 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:05:24.017632 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:05:24.398224 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:05:24.399654 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:05:24.400839 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:05:24.460858 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:24.470453 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:24.479668 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:24.488410 [info ] [MainThread]: Found 2 models, 521 macros
+[0m23:05:24.490560 [info ] [MainThread]: 
+[0m23:05:24.491954 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:05:24.493303 [info ] [MainThread]: 
+[0m23:05:24.494765 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:05:24.496778 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:05:24.499180 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:05:24.500427 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:05:24.501854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:24.504294 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:24.506269 [debug] [ThreadPool]: On list_memory: Close
+[0m23:05:24.508259 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949279228395144837_test_constraints)
+[0m23:05:24.511424 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949279228395144837_test_constraints"
+"
+[0m23:05:24.514080 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.516009 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:05:24.517465 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:24.520336 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:05:24.522713 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.523926 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:24.525364 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:24.526483 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.527737 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+    
+        create schema if not exists "memory"."test17949279228395144837_test_constraints"
+    
+[0m23:05:24.529494 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:05:24.531096 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:24.532175 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.533148 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:24.534454 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:24.535527 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:24.538056 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949279228395144837_test_constraints, now list_memory_test17949279228395144837_test_constraints)
+[0m23:05:24.539986 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.541031 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:24.542032 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:24.543562 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:24.544592 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:24.545626 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949279228395144837_test_constraints"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949279228395144837_test_constraints'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:05:24.547816 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:05:24.549646 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: ROLLBACK
+[0m23:05:24.551118 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:24.552669 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:24.553660 [debug] [MainThread]: On master: BEGIN
+[0m23:05:24.554565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:05:24.555880 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:05:24.557051 [debug] [MainThread]: On master: COMMIT
+[0m23:05:24.559448 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:24.560606 [debug] [MainThread]: On master: COMMIT
+[0m23:05:24.562031 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:24.563212 [debug] [MainThread]: On master: Close
+[0m23:05:24.566210 [debug] [Thread-990]: Began running node model.test.child
+[0m23:05:24.567882 [info ] [Thread-990]: 1 of 1 START sql table model test17949279228395144837_test_constraints.child ... [RUN]
+[0m23:05:24.569209 [debug] [Thread-990]: Re-using an available connection from the pool (formerly list_memory_test17949279228395144837_test_constraints, now model.test.child)
+[0m23:05:24.570372 [debug] [Thread-990]: Began compiling node model.test.child
+[0m23:05:24.573105 [debug] [Thread-990]: Writing injected SQL for node "model.test.child"
+[0m23:05:24.579280 [debug] [Thread-990]: Began executing node model.test.child
+[0m23:05:24.581156 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.582209 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+select database_name, type from duckdb_databases()
+[0m23:05:24.583259 [debug] [Thread-990]: Opening a new connection, currently in state closed
+[0m23:05:24.585174 [debug] [Thread-990]: SQL status: OK in 0.002 seconds
+[0m23:05:24.586941 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.587942 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:05:24.589851 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.595420 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.596822 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+DESCRIBE (select * from (
+         select 1 as foo_id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:24.599346 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.603259 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.604687 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+DESCRIBE (select * from (
+        select
+    
+      
+    cast(null as int)
+ as foo_id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:24.607239 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.610220 [debug] [Thread-990]: Writing runtime sql for node "model.test.child"
+[0m23:05:24.617854 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.619356 [debug] [Thread-990]: On model.test.child: BEGIN
+[0m23:05:24.621124 [debug] [Thread-990]: SQL status: OK in 0.000 seconds
+[0m23:05:24.622265 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.623423 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+    
+      
+    
+
+    create  table
+      "memory"."test17949279228395144837_test_constraints"."child"
+  
+  (
+    foo_id int references test17949279228395144837_test_constraints.foo (id)
+    
+    )
+ ;
+    
+    
+    insert into "memory"."test17949279228395144837_test_constraints"."child" 
+  (
+    
+      
+      
+      foo_id 
+    
+  )
+ (
+      
+    select foo_id
+    from (
+         select 1 as foo_id
+    ) as model_subq
+    );
+  
+[0m23:05:24.625897 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.628472 [debug] [Thread-990]: On model.test.child: COMMIT
+[0m23:05:24.629984 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.631299 [debug] [Thread-990]: On model.test.child: COMMIT
+[0m23:05:24.633501 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.636778 [debug] [Thread-990]: Using duckdb connection "model.test.child"
+[0m23:05:24.638019 [debug] [Thread-990]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+      drop table if exists "memory"."test17949279228395144837_test_constraints"."child__dbt_backup" cascade
+    
+[0m23:05:24.640201 [debug] [Thread-990]: SQL status: OK in 0.001 seconds
+[0m23:05:24.642592 [debug] [Thread-990]: On model.test.child: Close
+[0m23:05:24.644280 [info ] [Thread-990]: 1 of 1 OK created sql table model test17949279228395144837_test_constraints.child  [[32mOK[0m in 0.07s]
+[0m23:05:24.645678 [debug] [Thread-990]: Finished running node model.test.child
+[0m23:05:24.648623 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:24.649944 [debug] [MainThread]: On master: BEGIN
+[0m23:05:24.650948 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:05:24.652420 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:05:24.653456 [debug] [MainThread]: On master: COMMIT
+[0m23:05:24.654569 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:24.655599 [debug] [MainThread]: On master: COMMIT
+[0m23:05:24.656870 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:24.657904 [debug] [MainThread]: On master: Close
+[0m23:05:24.658994 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:05:24.660007 [debug] [MainThread]: Connection 'model.test.child' was properly closed.
+[0m23:05:24.661177 [info ] [MainThread]: 
+[0m23:05:24.662193 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m23:05:24.663505 [debug] [MainThread]: Command end result
+[0m23:05:24.719889 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:24.729144 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:24.739284 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:24.745309 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:05:24.746765 [info ] [MainThread]: 
+[0m23:05:24.748203 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:05:24.749666 [info ] [MainThread]: 
+[0m23:05:24.751000 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:05:24.752530 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8127593, "process_in_blocks": "211636", "process_kernel_time": 14.083315, "process_mem_max_rss": "284420", "process_out_blocks": "4240", "process_user_time": 62.48455}
+[0m23:05:24.753980 [debug] [MainThread]: Command `cli run` succeeded at 23:05:24.753842 after 0.81 seconds
+[0m23:05:24.755005 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:05:24.763464 | c3c043a3-a363-4193-96a6-cefd00267d47 ==============================
+[0m23:05:24.763464 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:05:24.764655 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'indirect_selection': 'eager', 'target_path': '/task-cache/dbt-target', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'use_colors': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'False', 'hints_enabled': 'True', 'invocation_command': 'dbt tests/functional/adapter/test_basic.py tests/functional/adapter/test_incremental.py tests/functional/adapter/test_constraints.py -q', 'printer_width': '80', 'no_print': 'None', 'log_format': 'default', 'log_path': '/workspace/logs/test17949279228395144837', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-8/profile36', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'debug': 'False'}
+[0m23:05:24.771051 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:05:24.823840 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:05:25.215110 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:05:25.216786 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:05:25.218189 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:05:25.374026 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:25.388822 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:25.401467 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:25.413382 [info ] [MainThread]: Found 2 models, 521 macros
+[0m23:05:25.417548 [info ] [MainThread]: 
+[0m23:05:25.420245 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:05:25.422183 [info ] [MainThread]: 
+[0m23:05:25.425397 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:05:25.428322 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:05:25.431801 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:05:25.433162 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:05:25.434690 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:25.437929 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:05:25.439973 [debug] [ThreadPool]: On list_memory: Close
+[0m23:05:25.441565 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949279228395144837_test_constraints)
+[0m23:05:25.442695 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949279228395144837_test_constraints"
+"
+[0m23:05:25.444887 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.446710 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:05:25.448189 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:25.450118 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:25.452215 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.453613 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:25.455205 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:25.456462 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.457569 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949279228395144837_test_constraints"} */
+
+    
+    
+        create schema if not exists "memory"."test17949279228395144837_test_constraints"
+    
+[0m23:05:25.459120 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:05:25.461019 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:25.462641 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.463741 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: COMMIT
+[0m23:05:25.465262 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:05:25.466894 [debug] [ThreadPool]: On create_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:25.469388 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949279228395144837_test_constraints, now list_memory_test17949279228395144837_test_constraints)
+[0m23:05:25.471397 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.472390 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: BEGIN
+[0m23:05:25.473473 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:25.475096 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:25.476196 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949279228395144837_test_constraints"
+[0m23:05:25.477416 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949279228395144837_test_constraints"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949279228395144837_test_constraints'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:05:25.480482 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:05:25.482707 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: ROLLBACK
+[0m23:05:25.484158 [debug] [ThreadPool]: On list_memory_test17949279228395144837_test_constraints: Close
+[0m23:05:25.486328 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:25.487695 [debug] [MainThread]: On master: BEGIN
+[0m23:05:25.488802 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:05:25.490381 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:05:25.491621 [debug] [MainThread]: On master: COMMIT
+[0m23:05:25.492700 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:25.493856 [debug] [MainThread]: On master: COMMIT
+[0m23:05:25.495240 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:25.496222 [debug] [MainThread]: On master: Close
+[0m23:05:25.499399 [debug] [Thread-997]: Began running node model.test.child
+[0m23:05:25.499871 [debug] [Thread-998]: Began running node model.test.foo
+[0m23:05:25.501333 [info ] [Thread-997]: 1 of 2 START sql table model test17949279228395144837_test_constraints.child ... [RUN]
+[0m23:05:25.502990 [info ] [Thread-998]: 2 of 2 START sql table model test17949279228395144837_test_constraints.foo ..... [RUN]
+[0m23:05:25.504356 [debug] [Thread-997]: Re-using an available connection from the pool (formerly list_memory_test17949279228395144837_test_constraints, now model.test.child)
+[0m23:05:25.505726 [debug] [Thread-998]: Acquiring new duckdb connection 'model.test.foo'
+[0m23:05:25.506994 [debug] [Thread-997]: Began compiling node model.test.child
+[0m23:05:25.508514 [debug] [Thread-998]: Began compiling node model.test.foo
+[0m23:05:25.511540 [debug] [Thread-997]: Writing injected SQL for node "model.test.child"
+[0m23:05:25.514600 [debug] [Thread-998]: Writing injected SQL for node "model.test.foo"
+[0m23:05:25.521232 [debug] [Thread-997]: Began executing node model.test.child
+[0m23:05:25.521873 [debug] [Thread-998]: Began executing node model.test.foo
+[0m23:05:25.523781 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.527820 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+select database_name, type from duckdb_databases()
+[0m23:05:25.529745 [debug] [Thread-997]: Opening a new connection, currently in state closed
+[0m23:05:25.532205 [debug] [Thread-997]: SQL status: OK in 0.003 seconds
+[0m23:05:25.534546 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.536176 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:05:25.538949 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.544077 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.545699 [debug] [Thread-997]: On model.test.child: BEGIN
+[0m23:05:25.547713 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.551194 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.552946 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+      drop table if exists "memory"."test17949279228395144837_test_constraints"."child" cascade
+    
+[0m23:05:25.555263 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.559965 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.561784 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+DESCRIBE (select * from (
+         select 1 as foo_id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:25.564393 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.568706 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.570401 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+DESCRIBE (select * from (
+        select
+    
+      
+    cast(null as int)
+ as foo_id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:25.573125 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.576683 [debug] [Thread-997]: Writing runtime sql for node "model.test.child"
+[0m23:05:25.584933 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.586495 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+    
+      
+    
+
+    create  table
+      "memory"."test17949279228395144837_test_constraints"."child"
+  
+  (
+    foo_id int references test17949279228395144837_test_constraints.foo (id)
+    
+    )
+ ;
+    
+    
+    insert into "memory"."test17949279228395144837_test_constraints"."child" 
+  (
+    
+      
+      
+      foo_id 
+    
+  )
+ (
+      
+    select foo_id
+    from (
+         select 1 as foo_id
+    ) as model_subq
+    );
+  
+[0m23:05:25.589723 [debug] [Thread-997]: SQL status: OK in 0.002 seconds
+[0m23:05:25.592300 [debug] [Thread-997]: On model.test.child: COMMIT
+[0m23:05:25.593428 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.594447 [debug] [Thread-997]: On model.test.child: COMMIT
+[0m23:05:25.596055 [debug] [Thread-997]: SQL status: OK in 0.001 seconds
+[0m23:05:25.598435 [debug] [Thread-997]: Using duckdb connection "model.test.child"
+[0m23:05:25.599445 [debug] [Thread-997]: On model.test.child: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.child"} */
+
+      drop table if exists "memory"."test17949279228395144837_test_constraints"."child__dbt_backup" cascade
+    
+[0m23:05:25.600809 [debug] [Thread-997]: SQL status: OK in 0.000 seconds
+[0m23:05:25.602839 [debug] [Thread-997]: On model.test.child: Close
+[0m23:05:25.603204 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.604837 [info ] [Thread-997]: 1 of 2 OK created sql table model test17949279228395144837_test_constraints.child  [[32mOK[0m in 0.10s]
+[0m23:05:25.606329 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+            select 1 from duckdb_constraints()
+            where constraint_type = 'FOREIGN KEY'
+              and lower(database_name) = lower('memory')
+              and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+              and lower(referenced_table) = lower('foo')
+              and lower(table_name) <> lower(referenced_table)
+            limit 1
+            
+[0m23:05:25.608203 [debug] [Thread-997]: Finished running node model.test.child
+[0m23:05:25.609463 [debug] [Thread-998]: Opening a new connection, currently in state init
+[0m23:05:25.612950 [debug] [Thread-998]: SQL status: OK in 0.003 seconds
+[0m23:05:25.619942 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.622080 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+DESCRIBE (select * from (
+        
+select 1 as id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:25.624889 [debug] [Thread-998]: SQL status: OK in 0.001 seconds
+[0m23:05:25.629876 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.631963 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+DESCRIBE (select * from (
+        select
+    
+      
+    cast(null as int)
+ as id
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m23:05:25.634872 [debug] [Thread-998]: SQL status: OK in 0.001 seconds
+[0m23:05:25.639641 [debug] [Thread-998]: Writing runtime sql for node "model.test.foo"
+[0m23:05:25.649021 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.650636 [debug] [Thread-998]: On model.test.foo: BEGIN
+[0m23:05:25.652384 [debug] [Thread-998]: SQL status: OK in 0.000 seconds
+[0m23:05:25.653874 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.655187 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+    
+      
+    
+
+    create  table
+      "memory"."test17949279228395144837_test_constraints"."foo__dbt_tmp"
+  
+  (
+    id int primary key
+    
+    )
+ ;
+    
+    
+    insert into "memory"."test17949279228395144837_test_constraints"."foo__dbt_tmp" 
+  (
+    
+      
+      
+      id 
+    
+  )
+ (
+      
+    select id
+    from (
+        
+select 1 as id
+    ) as model_subq
+    );
+  
+[0m23:05:25.657798 [debug] [Thread-998]: SQL status: OK in 0.001 seconds
+[0m23:05:25.659733 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.660894 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'memory'
+      AND schema_name = 'test17949279228395144837_test_constraints'
+      AND table_name = 'foo'
+  
+[0m23:05:25.662726 [debug] [Thread-998]: SQL status: OK in 0.001 seconds
+[0m23:05:25.665124 [debug] [Thread-998]: Using duckdb connection "model.test.foo"
+[0m23:05:25.666408 [debug] [Thread-998]: On model.test.foo: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.foo"} */
+
+    with recursive fks as (
+      select table_name, referenced_table
+      from duckdb_constraints()
+      where constraint_type = 'FOREIGN KEY'
+        and lower(database_name) = lower('memory')
+        and lower(schema_name) = lower('test17949279228395144837_test_constraints')
+        and lower(table_name) <> lower(referenced_table)
+    ),
+    dependents(table_name, depth) as (
+      select table_name, 1
+      from fks
+      where lower(referenced_table) = lower('foo')
+      union
+      select fks.table_name, dependents.depth + 1
+      from fks
+      join dependents on lower(fks.referenced_table) = lower(dependents.table_name)
+    )select d.table_name, d.depth, f.referenced_table
+    from (select table_name, max(depth) as depth from dependents group by table_name) d
+    join fks f on f.table_name = d.table_name
+    order by d.depth desc, d.table_name, f.referenced_table
+  
+[0m23:05:25.671537 [debug] [Thread-998]: SQL status: OK in 0.004 seconds
+[0m23:05:25.674313 [debug] [Thread-998]: On model.test.foo: ROLLBACK
+[0m23:05:25.676265 [debug] [Thread-998]: On model.test.foo: Close
+[0m23:05:25.679097 [debug] [Thread-998]: Compilation Error in model foo (models/foo.sql)
+  Cannot replace "memory"."test17949279228395144837_test_constraints"."foo" because DuckDB does not allow replacing a table that a foreign key references, and dbt-duckdb can only drop referencing tables that this run will rebuild. Problem tables: child (model child does not ref() the table its foreign key points at, so dbt may not rebuild it afterwards; use `to: ref(...)` in the constraint)
+  
+  > in macro drop_foreign_key_dependents (macros/adapters.sql)
+  > called by macro materialization_table_duckdb (macros/materializations/table.sql)
+  > called by model foo (models/foo.sql)
+[0m23:05:25.681033 [error] [Thread-998]: 2 of 2 ERROR creating sql table model test17949279228395144837_test_constraints.foo  [[31mERROR[0m in 0.18s]
+[0m23:05:25.682742 [debug] [Thread-998]: Finished running node model.test.foo
+[0m23:05:25.684388 [debug] [Thread-100]: Marking all children of 'model.test.foo' to be skipped because of status 'error'.  Reason: Compilation Error in model foo (models/foo.sql)
+  Cannot replace "memory"."test17949279228395144837_test_constraints"."foo" because DuckDB does not allow replacing a table that a foreign key references, and dbt-duckdb can only drop referencing tables that this run will rebuild. Problem tables: child (model child does not ref() the table its foreign key points at, so dbt may not rebuild it afterwards; use `to: ref(...)` in the constraint)
+  
+  > in macro drop_foreign_key_dependents (macros/adapters.sql)
+  > called by macro materialization_table_duckdb (macros/materializations/table.sql)
+  > called by model foo (models/foo.sql).
+[0m23:05:25.687507 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:25.689129 [debug] [MainThread]: On master: BEGIN
+[0m23:05:25.690548 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:05:25.692252 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:05:25.693383 [debug] [MainThread]: On master: COMMIT
+[0m23:05:25.694521 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:05:25.695847 [debug] [MainThread]: On master: COMMIT
+[0m23:05:25.697359 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:25.698451 [debug] [MainThread]: On master: Close
+[0m23:05:25.699772 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:05:25.701116 [debug] [MainThread]: Connection 'model.test.child' was properly closed.
+[0m23:05:25.702450 [debug] [MainThread]: Connection 'model.test.foo' was properly closed.
+[0m23:05:25.703750 [info ] [MainThread]: 
+[0m23:05:25.705106 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.28 seconds (0.28s).
+[0m23:05:25.706763 [debug] [MainThread]: Command end result
+[0m23:05:25.778527 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:05:25.791662 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:05:25.802635 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:05:25.808221 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:05:25.809622 [info ] [MainThread]: 
+[0m23:05:25.810821 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:05:25.812066 [info ] [MainThread]: 
+[0m23:05:25.813462 [error] [MainThread]: [[31mERROR[0m]: in model foo (models/foo.sql)
+[0m23:05:25.814946 [error] [MainThread]:   Compilation Error in model foo (models/foo.sql)
+  Cannot replace "memory"."test17949279228395144837_test_constraints"."foo" because DuckDB does not allow replacing a table that a foreign key references, and dbt-duckdb can only drop referencing tables that this run will rebuild. Problem tables: child (model child does not ref() the table its foreign key points at, so dbt may not rebuild it afterwards; use `to: ref(...)` in the constraint)
+  
+  > in macro drop_foreign_key_dependents (macros/adapters.sql)
+  > called by macro materialization_table_duckdb (macros/materializations/table.sql)
+  > called by model foo (models/foo.sql)
+[0m23:05:25.816714 [info ] [MainThread]: 
+[0m23:05:25.818350 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/foo.sql
+[0m23:05:25.820182 [info ] [MainThread]: 
+[0m23:05:25.821740 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m23:05:25.823332 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.0618081, "process_in_blocks": "213044", "process_kernel_time": 14.169033, "process_mem_max_rss": "284420", "process_out_blocks": "4240", "process_user_time": 62.829334}
+[0m23:05:25.824596 [debug] [MainThread]: Command `cli run` failed at 23:05:25.824470 after 1.06 seconds
+[0m23:05:25.825951 [debug] [MainThread]: Flushing usage events
+[0m23:05:25.828336 [debug] [MainThread]: Acquiring new duckdb connection '_test'
+[0m23:05:25.829726 [debug] [MainThread]: Dropping schema "database: "memory"
+schema: "test17949279228395144837_test_constraints"
+".
+[0m23:05:25.831738 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:05:25.832926 [debug] [MainThread]: On _test: BEGIN
+[0m23:05:25.834475 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:05:25.836548 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:05:25.837676 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:05:25.838979 [debug] [MainThread]: On _test: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "_test"} */
+drop schema if exists "memory"."test17949279228395144837_test_constraints" cascade
+[0m23:05:25.840445 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:25.842235 [debug] [MainThread]: On _test: COMMIT
+[0m23:05:25.843679 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:05:25.845039 [debug] [MainThread]: On _test: COMMIT
+[0m23:05:25.846715 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:05:25.848610 [debug] [MainThread]: On _test: Close

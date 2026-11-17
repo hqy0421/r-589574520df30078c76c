@@ -1,0 +1,1542 @@
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E005", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Acquiring new duckdb connection '_test'", "name": "NewConnection", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.427867Z"}}
+{"data": {"relation": {"database": "memory", "identifier": "", "schema": "test17949275066204547917_test_json_nodes"}}, "info": {"category": "", "code": "E020", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Creating schema \"database: \"memory\"\nschema: \"test17949275066204547917_test_json_nodes\"\n\"", "name": "SchemaCreation", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.433377Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.487895Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: \n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  ", "name": "SQLQuery", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.489567Z"}}
+{"data": {"connection_state": "init"}, "info": {"category": "", "code": "E037", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Opening a new connection, currently in state init", "name": "NewConnectionOpening", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.491542Z"}}
+{"data": {"elapsed": 0.04375928, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "SQL status: OK in 0.044 seconds", "name": "SQLQueryStatus", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.535309Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.538320Z"}}
+{"data": {"conn_name": "_test", "sql": "BEGIN"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: BEGIN", "name": "SQLQuery", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.539908Z"}}
+{"data": {"elapsed": 0.000405822, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "SQL status: OK in 0.000 seconds", "name": "SQLQueryStatus", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.541792Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.543375Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n    \n        create schema if not exists \"memory\".\"test17949275066204547917_test_json_nodes\"\n    "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: \n    \n    \n        create schema if not exists \"memory\".\"test17949275066204547917_test_json_nodes\"\n    ", "name": "SQLQuery", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.544867Z"}}
+{"data": {"elapsed": 0.00087204797, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.547506Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E018", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLCommit", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.549985Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.551350Z"}}
+{"data": {"conn_name": "_test", "sql": "COMMIT"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLQuery", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.552807Z"}}
+{"data": {"elapsed": 0.000672036, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.554968Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E010", "extra": {}, "invocation_id": "05d7459e-8924-4252-917e-1958d6e93074", "level": "debug", "msg": "On _test: Close", "name": "ConnectionClosed", "pid": 37932, "thread": "MainThread", "ts": "2026-11-17T14:58:27.556696Z"}}
+
+
+============================== 22:58:27.598410 | 647dc3f9-515e-40d9-b993-7904a15e9fb8 ==============================
+[0m22:58:27.598410 [info ] [MainThread]: Running with dbt=1.12.6
+[0m22:58:27.599873 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'cache_selected_only': 'False', 'no_print': 'None', 'version_check': 'True', 'printer_width': '80', 'quiet': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'log_format': 'default', 'hints_enabled': 'True', 'log_path': '/workspace/logs/test17949275066204547917', 'warn_error': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': '/task-cache/dbt-target', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'introspect': 'True', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py::TestJsonNodes -x -q', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-4/profile0', 'empty': 'False', 'use_colors': 'True', 'partial_parse': 'True'}
+[0m22:58:27.601143 [debug] [MainThread]: Connection '_test' was properly closed.
+[0m22:58:27.701628 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m22:58:27.772282 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m22:58:27.848693 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:58:29.274650 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m22:58:29.283338 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m22:58:29.315868 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m22:58:29.355358 [info ] [MainThread]: Found 8 models, 521 macros
+[0m22:58:29.359159 [info ] [MainThread]: 
+[0m22:58:29.360787 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m22:58:29.362258 [info ] [MainThread]: 
+[0m22:58:29.364099 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:58:29.371786 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m22:58:29.379048 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m22:58:29.380851 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m22:58:29.382517 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:29.385385 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m22:58:29.387863 [debug] [ThreadPool]: On list_memory: Close
+[0m22:58:29.389778 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949275066204547917_test_json_nodes)
+[0m22:58:29.391334 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949275066204547917_test_json_nodes"
+"
+[0m22:58:29.394085 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.395491 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949275066204547917_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m22:58:29.397018 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:58:29.400009 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m22:58:29.402485 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.403650 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: BEGIN
+[0m22:58:29.404922 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:58:29.406025 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.407204 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949275066204547917_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949275066204547917_test_json_nodes"
+    
+[0m22:58:29.408821 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:58:29.410345 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: COMMIT
+[0m22:58:29.411479 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.412784 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: COMMIT
+[0m22:58:29.414463 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:58:29.415456 [debug] [ThreadPool]: On create_memory_test17949275066204547917_test_json_nodes: Close
+[0m22:58:29.417794 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949275066204547917_test_json_nodes, now list_memory_test17949275066204547917_test_json_nodes)
+[0m22:58:29.422438 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.423590 [debug] [ThreadPool]: On list_memory_test17949275066204547917_test_json_nodes: BEGIN
+[0m22:58:29.424729 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:58:29.426416 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:58:29.427884 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949275066204547917_test_json_nodes"
+[0m22:58:29.429160 [debug] [ThreadPool]: On list_memory_test17949275066204547917_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949275066204547917_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949275066204547917_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m22:58:29.432872 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:58:29.435143 [debug] [ThreadPool]: On list_memory_test17949275066204547917_test_json_nodes: ROLLBACK
+[0m22:58:29.436911 [debug] [ThreadPool]: On list_memory_test17949275066204547917_test_json_nodes: Close
+[0m22:58:29.438683 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:58:29.439850 [debug] [MainThread]: On master: BEGIN
+[0m22:58:29.440877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:58:29.442577 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m22:58:29.443863 [debug] [MainThread]: On master: COMMIT
+[0m22:58:29.444880 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:58:29.445885 [debug] [MainThread]: On master: COMMIT
+[0m22:58:29.447463 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:58:29.448728 [debug] [MainThread]: On master: Close
+[0m22:58:29.453391 [debug] [Thread-1 (]: Began running node model.test.custom_keys
+[0m22:58:29.453891 [debug] [Thread-2 (]: Began running node model.test.docs
+[0m22:58:29.454306 [debug] [Thread-3 (]: Began running node model.test.empty_docs
+[0m22:58:29.455630 [info ] [Thread-1 (]: 1 of 8 START sql json_nodes model test17949275066204547917_test_json_nodes.custom_keys  [RUN]
+[0m22:58:29.456996 [info ] [Thread-2 (]: 2 of 8 START sql json_nodes model test17949275066204547917_test_json_nodes.docs  [RUN]
+[0m22:58:29.458876 [info ] [Thread-3 (]: 3 of 8 START sql json_nodes model test17949275066204547917_test_json_nodes.empty_docs  [RUN]
+[0m22:58:29.460499 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_memory_test17949275066204547917_test_json_nodes, now model.test.custom_keys)
+[0m22:58:29.462581 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.test.docs'
+[0m22:58:29.464994 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.test.empty_docs'
+[0m22:58:29.467042 [debug] [Thread-1 (]: Began compiling node model.test.custom_keys
+[0m22:58:29.469125 [debug] [Thread-2 (]: Began compiling node model.test.docs
+[0m22:58:29.470928 [debug] [Thread-3 (]: Began compiling node model.test.empty_docs
+[0m22:58:29.477817 [debug] [Thread-1 (]: Writing injected SQL for node "model.test.custom_keys"
+[0m22:58:29.480227 [debug] [Thread-2 (]: Writing injected SQL for node "model.test.docs"
+[0m22:58:29.483098 [debug] [Thread-3 (]: Writing injected SQL for node "model.test.empty_docs"
+[0m22:58:29.488865 [debug] [Thread-1 (]: Began executing node model.test.custom_keys
+[0m22:58:29.489386 [debug] [Thread-2 (]: Began executing node model.test.docs
+[0m22:58:29.492088 [debug] [Thread-3 (]: Began executing node model.test.empty_docs
+[0m22:58:29.493192 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.497821 [debug] [Thread-1 (]: On model.test.custom_keys: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys"} */
+select database_name, type from duckdb_databases()
+[0m22:58:29.499049 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:58:29.501251 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:58:29.503762 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.505288 [debug] [Thread-3 (]: On model.test.empty_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_docs"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949275066204547917_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m22:58:29.506797 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:58:29.509503 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m22:58:29.557722 [debug] [Thread-3 (]: Writing runtime sql for node "model.test.empty_docs"
+[0m22:58:29.560458 [debug] [Thread-2 (]: Writing runtime sql for node "model.test.docs"
+[0m22:58:29.562421 [debug] [Thread-1 (]: Writing runtime sql for node "model.test.custom_keys"
+[0m22:58:29.568570 [debug] [Thread-2 (]: Using duckdb connection "model.test.docs"
+[0m22:58:29.569314 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.570609 [debug] [Thread-2 (]: On model.test.docs: BEGIN
+[0m22:58:29.571139 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.572120 [debug] [Thread-3 (]: On model.test.empty_docs: BEGIN
+[0m22:58:29.573551 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:58:29.575348 [debug] [Thread-1 (]: On model.test.custom_keys: BEGIN
+[0m22:58:29.577642 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.579146 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m22:58:29.580582 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:58:29.581543 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.583042 [debug] [Thread-2 (]: Using duckdb connection "model.test.docs"
+[0m22:58:29.584549 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.586284 [debug] [Thread-3 (]: On model.test.empty_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_docs"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."empty_docs__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select doc_key as __doc_key, doc_json::json as __doc_json
+  from (
+select * from (values (1, '{}'::json)) as t(doc_key, doc_json)
+where false) as __model
+),
+__walk as (
+  select
+    __doc_key,
+    cast(null as varchar[]) as __parent_path,
+    cast([] as varchar[]) as __path,
+    cast(null as varchar) as member_name,
+    cast(null as bigint) as array_index,
+    __doc_json as __j
+  from __src
+  union all
+  select
+    w.__doc_key,
+    w.__path,
+    list_append(w.__path, c.__tag),
+    c.member_name,
+    c.array_index,
+    c.__child_j
+  from __walk w
+  cross join lateral (
+    select ('o' || k.key) as __tag, k.key as member_name, cast(null as bigint) as array_index, (w.__j -> k.key) as __child_j
+    from unnest(json_keys(w.__j)) as k(key)
+    where json_type(w.__j) = 'OBJECT'
+    union all
+    select ('a' || i.idx::varchar), null, i.idx, (w.__j -> i.idx)
+    from unnest(generate_series(0, json_array_length(w.__j)::bigint - 1)) as i(idx)
+    where json_type(w.__j) = 'ARRAY'
+  ) as c
+),
+__nodes as (
+  select
+    __doc_key,
+    row_number() over (partition by __doc_key order by len(__path), to_json(__path)) as node_id,
+    __path,
+    __parent_path,
+    member_name,
+    array_index,
+    __j
+  from __walk
+)
+select
+  n.__doc_key as doc_key,
+  n.node_id,
+  p.node_id as parent_id,
+  n.member_name,
+  n.array_index,
+  case
+    when json_type(n.__j) is null then 'null'
+    when json_type(n.__j) = 'OBJECT' then 'object'
+    when json_type(n.__j) = 'ARRAY' then 'array'
+    when json_type(n.__j) = 'VARCHAR' then 'string'
+    when json_type(n.__j) = 'BOOLEAN' then 'boolean'
+    when json_type(n.__j) = 'NULL' then 'null'
+    else 'number'
+  end as kind,
+  case when json_type(n.__j) = 'VARCHAR' then n.__j ->> '$' end as value_string,
+  case when json_type(n.__j) in ('BIGINT', 'UBIGINT', 'DOUBLE') then (n.__j ->> '$')::double end as value_number,
+  case when json_type(n.__j) = 'BOOLEAN' then (n.__j ->> '$')::boolean end as value_boolean
+from __nodes n
+left join __nodes p on p.__doc_key = n.__doc_key and p.__path = n.__parent_path
+
+    );
+    
+  
+[0m22:58:29.588132 [debug] [Thread-2 (]: On model.test.docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.docs"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."docs__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select doc_key as __doc_key, doc_json::json as __doc_json
+  from (
+select * from (values
+    (1, '{"name": "订单A", "tags": ["a", "b", "c"], "meta": {"vip": true, "note": null}, "empty_obj": {}, "empty_arr": [], "price": 9.99, "count": 3}'::json),
+    (2, '[1, "two", false, null, {"x": []}]'::json),
+    (3, '"plain"'::json),
+    (4, 'null'::json),
+    (5, '{}'::json)
+) as t(doc_key, doc_json)) as __model
+),
+__walk as (
+  select
+    __doc_key,
+    cast(null as varchar[]) as __parent_path,
+    cast([] as varchar[]) as __path,
+    cast(null as varchar) as member_name,
+    cast(null as bigint) as array_index,
+    __doc_json as __j
+  from __src
+  union all
+  select
+    w.__doc_key,
+    w.__path,
+    list_append(w.__path, c.__tag),
+    c.member_name,
+    c.array_index,
+    c.__child_j
+  from __walk w
+  cross join lateral (
+    select ('o' || k.key) as __tag, k.key as member_name, cast(null as bigint) as array_index, (w.__j -> k.key) as __child_j
+    from unnest(json_keys(w.__j)) as k(key)
+    where json_type(w.__j) = 'OBJECT'
+    union all
+    select ('a' || i.idx::varchar), null, i.idx, (w.__j -> i.idx)
+    from unnest(generate_series(0, json_array_length(w.__j)::bigint - 1)) as i(idx)
+    where json_type(w.__j) = 'ARRAY'
+  ) as c
+),
+__nodes as (
+  select
+    __doc_key,
+    row_number() over (partition by __doc_key order by len(__path), to_json(__path)) as node_id,
+    __path,
+    __parent_path,
+    member_name,
+    array_index,
+    __j
+  from __walk
+)
+select
+  n.__doc_key as doc_key,
+  n.node_id,
+  p.node_id as parent_id,
+  n.member_name,
+  n.array_index,
+  case
+    when json_type(n.__j) is null then 'null'
+    when json_type(n.__j) = 'OBJECT' then 'object'
+    when json_type(n.__j) = 'ARRAY' then 'array'
+    when json_type(n.__j) = 'VARCHAR' then 'string'
+    when json_type(n.__j) = 'BOOLEAN' then 'boolean'
+    when json_type(n.__j) = 'NULL' then 'null'
+    else 'number'
+  end as kind,
+  case when json_type(n.__j) = 'VARCHAR' then n.__j ->> '$' end as value_string,
+  case when json_type(n.__j) in ('BIGINT', 'UBIGINT', 'DOUBLE') then (n.__j ->> '$')::double end as value_number,
+  case when json_type(n.__j) = 'BOOLEAN' then (n.__j ->> '$')::boolean end as value_boolean
+from __nodes n
+left join __nodes p on p.__doc_key = n.__doc_key and p.__path = n.__parent_path
+
+    );
+    
+  
+[0m22:58:29.589633 [debug] [Thread-1 (]: On model.test.custom_keys: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."custom_keys__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select order_id as __doc_key, payload::json as __doc_json
+  from (
+select * from (values ('o1', '{"a": [true]}'::json)) as t(order_id, payload)) as __model
+),
+__walk as (
+  select
+    __doc_key,
+    cast(null as varchar[]) as __parent_path,
+    cast([] as varchar[]) as __path,
+    cast(null as varchar) as member_name,
+    cast(null as bigint) as array_index,
+    __doc_json as __j
+  from __src
+  union all
+  select
+    w.__doc_key,
+    w.__path,
+    list_append(w.__path, c.__tag),
+    c.member_name,
+    c.array_index,
+    c.__child_j
+  from __walk w
+  cross join lateral (
+    select ('o' || k.key) as __tag, k.key as member_name, cast(null as bigint) as array_index, (w.__j -> k.key) as __child_j
+    from unnest(json_keys(w.__j)) as k(key)
+    where json_type(w.__j) = 'OBJECT'
+    union all
+    select ('a' || i.idx::varchar), null, i.idx, (w.__j -> i.idx)
+    from unnest(generate_series(0, json_array_length(w.__j)::bigint - 1)) as i(idx)
+    where json_type(w.__j) = 'ARRAY'
+  ) as c
+),
+__nodes as (
+  select
+    __doc_key,
+    row_number() over (partition by __doc_key order by len(__path), to_json(__path)) as node_id,
+    __path,
+    __parent_path,
+    member_name,
+    array_index,
+    __j
+  from __walk
+)
+select
+  n.__doc_key as order_id,
+  n.node_id,
+  p.node_id as parent_id,
+  n.member_name,
+  n.array_index,
+  case
+    when json_type(n.__j) is null then 'null'
+    when json_type(n.__j) = 'OBJECT' then 'object'
+    when json_type(n.__j) = 'ARRAY' then 'array'
+    when json_type(n.__j) = 'VARCHAR' then 'string'
+    when json_type(n.__j) = 'BOOLEAN' then 'boolean'
+    when json_type(n.__j) = 'NULL' then 'null'
+    else 'number'
+  end as kind,
+  case when json_type(n.__j) = 'VARCHAR' then n.__j ->> '$' end as value_string,
+  case when json_type(n.__j) in ('BIGINT', 'UBIGINT', 'DOUBLE') then (n.__j ->> '$')::double end as value_number,
+  case when json_type(n.__j) = 'BOOLEAN' then (n.__j ->> '$')::boolean end as value_boolean
+from __nodes n
+left join __nodes p on p.__doc_key = n.__doc_key and p.__path = n.__parent_path
+
+    );
+    
+  
+[0m22:58:29.597250 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m22:58:29.606317 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.606831 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m22:58:29.607323 [debug] [Thread-2 (]: SQL status: OK in 0.015 seconds
+[0m22:58:29.608539 [debug] [Thread-3 (]: On model.test.empty_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_docs"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."empty_docs__dbt_tmp" rename to "empty_docs"
+[0m22:58:29.612003 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.615941 [debug] [Thread-2 (]: Using duckdb connection "model.test.docs"
+[0m22:58:29.617952 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.618377 [debug] [Thread-1 (]: On model.test.custom_keys: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."custom_keys__dbt_tmp" rename to "custom_keys"
+[0m22:58:29.619623 [debug] [Thread-2 (]: On model.test.docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.docs"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."docs__dbt_tmp" rename to "docs"
+[0m22:58:29.621716 [debug] [Thread-3 (]: On model.test.empty_docs: COMMIT
+[0m22:58:29.623809 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.625246 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:58:29.626078 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.627858 [debug] [Thread-1 (]: On model.test.custom_keys: COMMIT
+[0m22:58:29.629615 [debug] [Thread-2 (]: On model.test.docs: COMMIT
+[0m22:58:29.630858 [debug] [Thread-3 (]: On model.test.empty_docs: COMMIT
+[0m22:58:29.631968 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.633132 [debug] [Thread-2 (]: Using duckdb connection "model.test.docs"
+[0m22:58:29.634865 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:58:29.636044 [debug] [Thread-1 (]: On model.test.custom_keys: COMMIT
+[0m22:58:29.637712 [debug] [Thread-2 (]: On model.test.docs: COMMIT
+[0m22:58:29.642923 [debug] [Thread-3 (]: Using duckdb connection "model.test.empty_docs"
+[0m22:58:29.644948 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.646329 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.647313 [debug] [Thread-3 (]: On model.test.empty_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_docs"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."empty_docs__dbt_backup" cascade
+    
+[0m22:58:29.650253 [debug] [Thread-1 (]: Using duckdb connection "model.test.custom_keys"
+[0m22:58:29.652447 [debug] [Thread-2 (]: Using duckdb connection "model.test.docs"
+[0m22:58:29.654115 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:58:29.654893 [debug] [Thread-1 (]: On model.test.custom_keys: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."custom_keys__dbt_backup" cascade
+    
+[0m22:58:29.655961 [debug] [Thread-2 (]: On model.test.docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.docs"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."docs__dbt_backup" cascade
+    
+[0m22:58:29.658879 [debug] [Thread-3 (]: On model.test.empty_docs: Close
+[0m22:58:29.661271 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.662355 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.666757 [debug] [Thread-1 (]: On model.test.custom_keys: Close
+[0m22:58:29.667931 [info ] [Thread-3 (]: 3 of 8 OK created sql json_nodes model test17949275066204547917_test_json_nodes.empty_docs  [[32mOK[0m in 0.20s]
+[0m22:58:29.669977 [debug] [Thread-2 (]: On model.test.docs: Close
+[0m22:58:29.672018 [info ] [Thread-1 (]: 1 of 8 OK created sql json_nodes model test17949275066204547917_test_json_nodes.custom_keys  [[32mOK[0m in 0.21s]
+[0m22:58:29.673309 [debug] [Thread-3 (]: Finished running node model.test.empty_docs
+[0m22:58:29.675144 [info ] [Thread-2 (]: 2 of 8 OK created sql json_nodes model test17949275066204547917_test_json_nodes.docs  [[32mOK[0m in 0.21s]
+[0m22:58:29.676556 [debug] [Thread-1 (]: Finished running node model.test.custom_keys
+[0m22:58:29.678542 [debug] [Thread-4 (]: Began running node model.test.empty_rebuilt
+[0m22:58:29.679878 [debug] [Thread-2 (]: Finished running node model.test.docs
+[0m22:58:29.681524 [debug] [Thread-3 (]: Began running node model.test.custom_keys_rebuilt
+[0m22:58:29.682791 [info ] [Thread-4 (]: 4 of 8 START sql json_rebuild model test17949275066204547917_test_json_nodes.empty_rebuilt  [RUN]
+[0m22:58:29.684882 [debug] [Thread-1 (]: Began running node model.test.node_strings
+[0m22:58:29.685316 [debug] [Thread-2 (]: Began running node model.test.rebuilt
+[0m22:58:29.686407 [info ] [Thread-3 (]: 5 of 8 START sql json_rebuild model test17949275066204547917_test_json_nodes.custom_keys_rebuilt  [RUN]
+[0m22:58:29.687829 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.test.empty_rebuilt'
+[0m22:58:29.689219 [info ] [Thread-1 (]: 6 of 8 START sql table model test17949275066204547917_test_json_nodes.node_strings  [RUN]
+[0m22:58:29.690668 [info ] [Thread-2 (]: 7 of 8 START sql json_rebuild model test17949275066204547917_test_json_nodes.rebuilt  [RUN]
+[0m22:58:29.692270 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.test.empty_docs, now model.test.custom_keys_rebuilt)
+[0m22:58:29.693641 [debug] [Thread-4 (]: Began compiling node model.test.empty_rebuilt
+[0m22:58:29.695124 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.test.custom_keys, now model.test.node_strings)
+[0m22:58:29.696624 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.test.docs, now model.test.rebuilt)
+[0m22:58:29.698161 [debug] [Thread-3 (]: Began compiling node model.test.custom_keys_rebuilt
+[0m22:58:29.702831 [debug] [Thread-4 (]: Writing injected SQL for node "model.test.empty_rebuilt"
+[0m22:58:29.704341 [debug] [Thread-1 (]: Began compiling node model.test.node_strings
+[0m22:58:29.705938 [debug] [Thread-2 (]: Began compiling node model.test.rebuilt
+[0m22:58:29.709020 [debug] [Thread-3 (]: Writing injected SQL for node "model.test.custom_keys_rebuilt"
+[0m22:58:29.713144 [debug] [Thread-1 (]: Writing injected SQL for node "model.test.node_strings"
+[0m22:58:29.716762 [debug] [Thread-2 (]: Writing injected SQL for node "model.test.rebuilt"
+[0m22:58:29.718507 [debug] [Thread-4 (]: Began executing node model.test.empty_rebuilt
+[0m22:58:29.732966 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.734546 [debug] [Thread-2 (]: Began executing node model.test.rebuilt
+[0m22:58:29.735236 [debug] [Thread-1 (]: Began executing node model.test.node_strings
+[0m22:58:29.735844 [debug] [Thread-4 (]: On model.test.empty_rebuilt: BEGIN
+[0m22:58:29.736263 [debug] [Thread-3 (]: Began executing node model.test.custom_keys_rebuilt
+[0m22:58:29.740087 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.763112 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:58:29.775780 [debug] [Thread-1 (]: Writing runtime sql for node "model.test.node_strings"
+[0m22:58:29.779150 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.780652 [debug] [Thread-2 (]: On model.test.rebuilt: BEGIN
+[0m22:58:29.783169 [debug] [Thread-4 (]: SQL status: OK in 0.020 seconds
+[0m22:58:29.784730 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: BEGIN
+[0m22:58:29.786974 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:58:29.788416 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.789893 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:58:29.791596 [debug] [Thread-1 (]: Using duckdb connection "model.test.node_strings"
+[0m22:58:29.792106 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m22:58:29.793042 [debug] [Thread-4 (]: On model.test.empty_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_rebuilt"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."empty_docs") as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m22:58:29.795009 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m22:58:29.796090 [debug] [Thread-1 (]: On model.test.node_strings: BEGIN
+[0m22:58:29.797309 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.800397 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.801987 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:58:29.803882 [debug] [Thread-2 (]: On model.test.rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."docs") as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m22:58:29.805699 [debug] [Thread-4 (]: SQL status: OK in 0.007 seconds
+[0m22:58:29.806309 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys_rebuilt"} */
+
+with recursive __src as (
+  select
+    order_id as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."custom_keys") as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m22:58:29.808764 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m22:58:29.813748 [debug] [Thread-4 (]: Writing runtime sql for node "model.test.empty_rebuilt"
+[0m22:58:29.817786 [debug] [Thread-1 (]: Using duckdb connection "model.test.node_strings"
+[0m22:58:29.821020 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m22:58:29.821976 [debug] [Thread-1 (]: On model.test.node_strings: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.node_strings"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."node_strings__dbt_tmp"
+  
+    
+    as (
+      
+select doc_key, node_id, value_string
+from "memory"."test17949275066204547917_test_json_nodes"."docs"
+where kind = 'string'
+    );
+    
+  
+[0m22:58:29.826506 [debug] [Thread-2 (]: Writing runtime sql for node "model.test.rebuilt"
+[0m22:58:29.827326 [debug] [Thread-3 (]: SQL status: OK in 0.012 seconds
+[0m22:58:29.828380 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.829175 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.832003 [debug] [Thread-3 (]: Writing runtime sql for node "model.test.custom_keys_rebuilt"
+[0m22:58:29.834669 [debug] [Thread-1 (]: Using duckdb connection "model.test.node_strings"
+[0m22:58:29.835961 [debug] [Thread-4 (]: On model.test.empty_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_rebuilt"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."empty_rebuilt__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."empty_docs") as __model
+),
+__leafj as (
+  -- nodes whose JSON is known without looking at any other row:
+  -- scalars and empty containers
+  select
+    __doc_key,
+    node_id,
+    case kind
+      when 'string' then to_json(value_string)
+      when 'number' then to_json(value_number)
+      when 'boolean' then to_json(value_boolean)
+      when 'null' then 'null'::json
+      when 'object' then '{}'::json
+      when 'array' then '[]'::json
+    end as __j
+  from __src
+  where kind not in ('object', 'array')
+     or not exists (
+       select 1 from __src c
+       where c.__doc_key = __src.__doc_key and c.parent_id = __src.node_id
+     )
+),
+__forest(__iter, __m) as (
+  -- fixpoint assembly: __m maps 'doc_key:node_id' -> assembled JSON subtree.
+  -- each iteration adds every container whose children are all in the map
+  select 0, map(list(__ref), list(__j))
+  from (select __doc_key::varchar || ':' || node_id::varchar as __ref, __j from __leafj)
+  union all
+  select
+    f.__iter + 1,
+    map_concat(f.__m, (
+      select map(list(__ref), list(__j))
+      from (
+        select
+          p.__doc_key::varchar || ':' || p.node_id::varchar as __ref,
+          case p.kind
+            when 'object' then to_json(map(
+              list(c.member_name order by c.node_id),
+              list(f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.node_id)))
+            when 'array' then to_json(list(
+              f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.array_index))
+          end as __j
+        from __src p
+        join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+        where p.kind in ('object', 'array')
+          and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+        group by p.__doc_key, p.node_id, p.kind
+        having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+      ) as __new
+    ))
+  from __forest f
+  where exists (
+    select 1
+    from __src p
+    join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+    where p.kind in ('object', 'array')
+      and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+    group by p.__doc_key, p.node_id
+    having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+  )
+)
+select
+  r.__doc_key as doc_key,
+  f.__m[r.__ref] as doc_json
+from (
+  select distinct __doc_key, __doc_key::varchar || ':' || node_id::varchar as __ref
+  from __src
+  where parent_id is null
+) as r
+cross join (select __m from __forest order by __iter desc limit 1) as f
+
+    );
+    
+  
+[0m22:58:29.836696 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.839062 [debug] [Thread-1 (]: On model.test.node_strings: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.node_strings"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."node_strings__dbt_tmp" rename to "node_strings"
+[0m22:58:29.842111 [debug] [Thread-2 (]: On model.test.rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."rebuilt__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."docs") as __model
+),
+__leafj as (
+  -- nodes whose JSON is known without looking at any other row:
+  -- scalars and empty containers
+  select
+    __doc_key,
+    node_id,
+    case kind
+      when 'string' then to_json(value_string)
+      when 'number' then to_json(value_number)
+      when 'boolean' then to_json(value_boolean)
+      when 'null' then 'null'::json
+      when 'object' then '{}'::json
+      when 'array' then '[]'::json
+    end as __j
+  from __src
+  where kind not in ('object', 'array')
+     or not exists (
+       select 1 from __src c
+       where c.__doc_key = __src.__doc_key and c.parent_id = __src.node_id
+     )
+),
+__forest(__iter, __m) as (
+  -- fixpoint assembly: __m maps 'doc_key:node_id' -> assembled JSON subtree.
+  -- each iteration adds every container whose children are all in the map
+  select 0, map(list(__ref), list(__j))
+  from (select __doc_key::varchar || ':' || node_id::varchar as __ref, __j from __leafj)
+  union all
+  select
+    f.__iter + 1,
+    map_concat(f.__m, (
+      select map(list(__ref), list(__j))
+      from (
+        select
+          p.__doc_key::varchar || ':' || p.node_id::varchar as __ref,
+          case p.kind
+            when 'object' then to_json(map(
+              list(c.member_name order by c.node_id),
+              list(f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.node_id)))
+            when 'array' then to_json(list(
+              f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.array_index))
+          end as __j
+        from __src p
+        join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+        where p.kind in ('object', 'array')
+          and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+        group by p.__doc_key, p.node_id, p.kind
+        having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+      ) as __new
+    ))
+  from __forest f
+  where exists (
+    select 1
+    from __src p
+    join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+    where p.kind in ('object', 'array')
+      and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+    group by p.__doc_key, p.node_id
+    having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+  )
+)
+select
+  r.__doc_key as doc_key,
+  f.__m[r.__ref] as doc_json
+from (
+  select distinct __doc_key, __doc_key::varchar || ':' || node_id::varchar as __ref
+  from __src
+  where parent_id is null
+) as r
+cross join (select __m from __forest order by __iter desc limit 1) as f
+
+    );
+    
+  
+[0m22:58:29.844382 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.845237 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.871800 [debug] [Thread-1 (]: On model.test.node_strings: COMMIT
+[0m22:58:29.872575 [debug] [Thread-4 (]: SQL status: OK in 0.032 seconds
+[0m22:58:29.873978 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys_rebuilt"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."custom_keys_rebuilt__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select
+    order_id as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+select * from "memory"."test17949275066204547917_test_json_nodes"."custom_keys") as __model
+),
+__leafj as (
+  -- nodes whose JSON is known without looking at any other row:
+  -- scalars and empty containers
+  select
+    __doc_key,
+    node_id,
+    case kind
+      when 'string' then to_json(value_string)
+      when 'number' then to_json(value_number)
+      when 'boolean' then to_json(value_boolean)
+      when 'null' then 'null'::json
+      when 'object' then '{}'::json
+      when 'array' then '[]'::json
+    end as __j
+  from __src
+  where kind not in ('object', 'array')
+     or not exists (
+       select 1 from __src c
+       where c.__doc_key = __src.__doc_key and c.parent_id = __src.node_id
+     )
+),
+__forest(__iter, __m) as (
+  -- fixpoint assembly: __m maps 'doc_key:node_id' -> assembled JSON subtree.
+  -- each iteration adds every container whose children are all in the map
+  select 0, map(list(__ref), list(__j))
+  from (select __doc_key::varchar || ':' || node_id::varchar as __ref, __j from __leafj)
+  union all
+  select
+    f.__iter + 1,
+    map_concat(f.__m, (
+      select map(list(__ref), list(__j))
+      from (
+        select
+          p.__doc_key::varchar || ':' || p.node_id::varchar as __ref,
+          case p.kind
+            when 'object' then to_json(map(
+              list(c.member_name order by c.node_id),
+              list(f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.node_id)))
+            when 'array' then to_json(list(
+              f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.array_index))
+          end as __j
+        from __src p
+        join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+        where p.kind in ('object', 'array')
+          and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+        group by p.__doc_key, p.node_id, p.kind
+        having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+      ) as __new
+    ))
+  from __forest f
+  where exists (
+    select 1
+    from __src p
+    join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+    where p.kind in ('object', 'array')
+      and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+    group by p.__doc_key, p.node_id
+    having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+  )
+)
+select
+  r.__doc_key as order_id,
+  f.__m[r.__ref] as payload
+from (
+  select distinct __doc_key, __doc_key::varchar || ':' || node_id::varchar as __ref
+  from __src
+  where parent_id is null
+) as r
+cross join (select __m from __forest order by __iter desc limit 1) as f
+
+    );
+    
+  
+[0m22:58:29.877544 [debug] [Thread-1 (]: Using duckdb connection "model.test.node_strings"
+[0m22:58:29.883116 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.884743 [debug] [Thread-2 (]: SQL status: OK in 0.039 seconds
+[0m22:58:29.886841 [debug] [Thread-1 (]: On model.test.node_strings: COMMIT
+[0m22:58:29.888548 [debug] [Thread-4 (]: On model.test.empty_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_rebuilt"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."empty_rebuilt__dbt_tmp" rename to "empty_rebuilt"
+[0m22:58:29.892471 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.895013 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.896572 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.897068 [debug] [Thread-2 (]: On model.test.rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."rebuilt__dbt_tmp" rename to "rebuilt"
+[0m22:58:29.901042 [debug] [Thread-1 (]: Using duckdb connection "model.test.node_strings"
+[0m22:58:29.903726 [debug] [Thread-4 (]: On model.test.empty_rebuilt: COMMIT
+[0m22:58:29.906424 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.908662 [debug] [Thread-1 (]: On model.test.node_strings: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.node_strings"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."node_strings__dbt_backup" cascade
+    
+[0m22:58:29.911128 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.913707 [debug] [Thread-2 (]: On model.test.rebuilt: COMMIT
+[0m22:58:29.916118 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.916713 [debug] [Thread-3 (]: SQL status: OK in 0.031 seconds
+[0m22:58:29.917791 [debug] [Thread-4 (]: On model.test.empty_rebuilt: COMMIT
+[0m22:58:29.919192 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.921877 [debug] [Thread-1 (]: On model.test.node_strings: Close
+[0m22:58:29.925127 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.927350 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.927946 [debug] [Thread-2 (]: On model.test.rebuilt: COMMIT
+[0m22:58:29.929629 [info ] [Thread-1 (]: 6 of 8 OK created sql table model test17949275066204547917_test_json_nodes.node_strings  [[32mOK[0m in 0.23s]
+[0m22:58:29.930711 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys_rebuilt"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."custom_keys_rebuilt__dbt_tmp" rename to "custom_keys_rebuilt"
+[0m22:58:29.933161 [debug] [Thread-4 (]: Using duckdb connection "model.test.empty_rebuilt"
+[0m22:58:29.935147 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.936442 [debug] [Thread-1 (]: Finished running node model.test.node_strings
+[0m22:58:29.938475 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.939328 [debug] [Thread-4 (]: On model.test.empty_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.empty_rebuilt"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."empty_rebuilt__dbt_backup" cascade
+    
+[0m22:58:29.942611 [debug] [Thread-2 (]: Using duckdb connection "model.test.rebuilt"
+[0m22:58:29.944552 [debug] [Thread-1 (]: Began running node model.test.rebuilt_cleaned
+[0m22:58:29.946595 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: COMMIT
+[0m22:58:29.948854 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.949917 [debug] [Thread-2 (]: On model.test.rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."rebuilt__dbt_backup" cascade
+    
+[0m22:58:29.951440 [info ] [Thread-1 (]: 8 of 8 START sql json_rebuild model test17949275066204547917_test_json_nodes.rebuilt_cleaned  [RUN]
+[0m22:58:29.952814 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.955620 [debug] [Thread-4 (]: On model.test.empty_rebuilt: Close
+[0m22:58:29.957510 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.958771 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.test.node_strings, now model.test.rebuilt_cleaned)
+[0m22:58:29.960789 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: COMMIT
+[0m22:58:29.963250 [info ] [Thread-4 (]: 4 of 8 OK created sql json_rebuild model test17949275066204547917_test_json_nodes.empty_rebuilt  [[32mOK[0m in 0.28s]
+[0m22:58:29.965804 [debug] [Thread-2 (]: On model.test.rebuilt: Close
+[0m22:58:29.967057 [debug] [Thread-1 (]: Began compiling node model.test.rebuilt_cleaned
+[0m22:58:29.969424 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.970297 [debug] [Thread-4 (]: Finished running node model.test.empty_rebuilt
+[0m22:58:29.972479 [info ] [Thread-2 (]: 7 of 8 OK created sql json_rebuild model test17949275066204547917_test_json_nodes.rebuilt  [[32mOK[0m in 0.28s]
+[0m22:58:29.975413 [debug] [Thread-1 (]: Writing injected SQL for node "model.test.rebuilt_cleaned"
+[0m22:58:29.978531 [debug] [Thread-3 (]: Using duckdb connection "model.test.custom_keys_rebuilt"
+[0m22:58:29.981553 [debug] [Thread-2 (]: Finished running node model.test.rebuilt
+[0m22:58:29.984339 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.custom_keys_rebuilt"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."custom_keys_rebuilt__dbt_backup" cascade
+    
+[0m22:58:29.987608 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:58:29.990096 [debug] [Thread-3 (]: On model.test.custom_keys_rebuilt: Close
+[0m22:58:29.991787 [debug] [Thread-1 (]: Began executing node model.test.rebuilt_cleaned
+[0m22:58:29.992981 [info ] [Thread-3 (]: 5 of 8 OK created sql json_rebuild model test17949275066204547917_test_json_nodes.custom_keys_rebuilt  [[32mOK[0m in 0.30s]
+[0m22:58:29.997093 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:29.998944 [debug] [Thread-3 (]: Finished running node model.test.custom_keys_rebuilt
+[0m22:58:30.000559 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: BEGIN
+[0m22:58:30.003094 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:58:30.005063 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:58:30.006469 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:30.008002 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt_cleaned"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+with nodes as (
+    select * from "memory"."test17949275066204547917_test_json_nodes"."docs"
+),
+cleaned as (
+    select
+        doc_key,
+        node_id,
+        -- re-attach: move 'meta' under 'empty_obj'
+        case when doc_key = 1 and member_name = 'meta'
+             then (select node_id from nodes where doc_key = 1 and member_name = 'empty_obj')
+             else parent_id end as parent_id,
+        case when doc_key = 1 and member_name = 'meta' then 'moved_meta' else member_name end as member_name,
+        array_index,
+        kind,
+        value_string,
+        -- change a value
+        case when doc_key = 1 and member_name = 'price' then 19.99 else value_number end as value_number,
+        value_boolean
+    from nodes
+    -- delete a node: drop tags[1] (identified by node_id to avoid null traps)
+    where not (doc_key = 1 and node_id = (
+        select c.node_id from nodes c
+        where c.doc_key = 1 and c.array_index = 1
+          and c.parent_id = (select node_id from nodes where doc_key = 1 and member_name = 'tags')))
+    union all
+    -- add a node: new member 'extra' under the root of document 1
+    select 1, 1000, 1, 'extra', null, 'string', '新增', null, null
+)
+select * from cleaned) as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m22:58:30.022279 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m22:58:30.025631 [debug] [Thread-1 (]: Writing runtime sql for node "model.test.rebuilt_cleaned"
+[0m22:58:30.033987 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:30.035598 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt_cleaned"} */
+
+    
+
+    create  table
+      "memory"."test17949275066204547917_test_json_nodes"."rebuilt_cleaned__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+with nodes as (
+    select * from "memory"."test17949275066204547917_test_json_nodes"."docs"
+),
+cleaned as (
+    select
+        doc_key,
+        node_id,
+        -- re-attach: move 'meta' under 'empty_obj'
+        case when doc_key = 1 and member_name = 'meta'
+             then (select node_id from nodes where doc_key = 1 and member_name = 'empty_obj')
+             else parent_id end as parent_id,
+        case when doc_key = 1 and member_name = 'meta' then 'moved_meta' else member_name end as member_name,
+        array_index,
+        kind,
+        value_string,
+        -- change a value
+        case when doc_key = 1 and member_name = 'price' then 19.99 else value_number end as value_number,
+        value_boolean
+    from nodes
+    -- delete a node: drop tags[1] (identified by node_id to avoid null traps)
+    where not (doc_key = 1 and node_id = (
+        select c.node_id from nodes c
+        where c.doc_key = 1 and c.array_index = 1
+          and c.parent_id = (select node_id from nodes where doc_key = 1 and member_name = 'tags')))
+    union all
+    -- add a node: new member 'extra' under the root of document 1
+    select 1, 1000, 1, 'extra', null, 'string', '新增', null, null
+)
+select * from cleaned) as __model
+),
+__leafj as (
+  -- nodes whose JSON is known without looking at any other row:
+  -- scalars and empty containers
+  select
+    __doc_key,
+    node_id,
+    case kind
+      when 'string' then to_json(value_string)
+      when 'number' then to_json(value_number)
+      when 'boolean' then to_json(value_boolean)
+      when 'null' then 'null'::json
+      when 'object' then '{}'::json
+      when 'array' then '[]'::json
+    end as __j
+  from __src
+  where kind not in ('object', 'array')
+     or not exists (
+       select 1 from __src c
+       where c.__doc_key = __src.__doc_key and c.parent_id = __src.node_id
+     )
+),
+__forest(__iter, __m) as (
+  -- fixpoint assembly: __m maps 'doc_key:node_id' -> assembled JSON subtree.
+  -- each iteration adds every container whose children are all in the map
+  select 0, map(list(__ref), list(__j))
+  from (select __doc_key::varchar || ':' || node_id::varchar as __ref, __j from __leafj)
+  union all
+  select
+    f.__iter + 1,
+    map_concat(f.__m, (
+      select map(list(__ref), list(__j))
+      from (
+        select
+          p.__doc_key::varchar || ':' || p.node_id::varchar as __ref,
+          case p.kind
+            when 'object' then to_json(map(
+              list(c.member_name order by c.node_id),
+              list(f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.node_id)))
+            when 'array' then to_json(list(
+              f.__m[c.__doc_key::varchar || ':' || c.node_id::varchar] order by c.array_index))
+          end as __j
+        from __src p
+        join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+        where p.kind in ('object', 'array')
+          and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+        group by p.__doc_key, p.node_id, p.kind
+        having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+      ) as __new
+    ))
+  from __forest f
+  where exists (
+    select 1
+    from __src p
+    join __src c on c.__doc_key = p.__doc_key and c.parent_id = p.node_id
+    where p.kind in ('object', 'array')
+      and not map_contains(f.__m, p.__doc_key::varchar || ':' || p.node_id::varchar)
+    group by p.__doc_key, p.node_id
+    having count(*) filter (map_contains(f.__m, c.__doc_key::varchar || ':' || c.node_id::varchar)) = count(*)
+  )
+)
+select
+  r.__doc_key as doc_key,
+  f.__m[r.__ref] as doc_json
+from (
+  select distinct __doc_key, __doc_key::varchar || ':' || node_id::varchar as __ref
+  from __src
+  where parent_id is null
+) as r
+cross join (select __m from __forest order by __iter desc limit 1) as f
+
+    );
+    
+  
+[0m22:58:30.078592 [debug] [Thread-1 (]: SQL status: OK in 0.041 seconds
+[0m22:58:30.082124 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:30.083601 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt_cleaned"} */
+alter table "memory"."test17949275066204547917_test_json_nodes"."rebuilt_cleaned__dbt_tmp" rename to "rebuilt_cleaned"
+[0m22:58:30.085643 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:30.088126 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: COMMIT
+[0m22:58:30.089651 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:30.091090 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: COMMIT
+[0m22:58:30.093224 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:30.096071 [debug] [Thread-1 (]: Using duckdb connection "model.test.rebuilt_cleaned"
+[0m22:58:30.097610 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.rebuilt_cleaned"} */
+
+      drop table if exists "memory"."test17949275066204547917_test_json_nodes"."rebuilt_cleaned__dbt_backup" cascade
+    
+[0m22:58:30.099649 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:58:30.102446 [debug] [Thread-1 (]: On model.test.rebuilt_cleaned: Close
+[0m22:58:30.104690 [info ] [Thread-1 (]: 8 of 8 OK created sql json_rebuild model test17949275066204547917_test_json_nodes.rebuilt_cleaned  [[32mOK[0m in 0.15s]
+[0m22:58:30.106328 [debug] [Thread-1 (]: Finished running node model.test.rebuilt_cleaned
+[0m22:58:30.109545 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:58:30.111070 [debug] [MainThread]: On master: BEGIN
+[0m22:58:30.112039 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:58:30.113964 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m22:58:30.115185 [debug] [MainThread]: On master: COMMIT
+[0m22:58:30.116401 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:58:30.117685 [debug] [MainThread]: On master: COMMIT
+[0m22:58:30.119275 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:58:30.120524 [debug] [MainThread]: On master: Close
+[0m22:58:30.122371 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:58:30.123820 [debug] [MainThread]: Connection 'model.test.rebuilt_cleaned' was properly closed.
+[0m22:58:30.125103 [debug] [MainThread]: Connection 'model.test.rebuilt' was properly closed.
+[0m22:58:30.126560 [debug] [MainThread]: Connection 'model.test.custom_keys_rebuilt' was properly closed.
+[0m22:58:30.127868 [debug] [MainThread]: Connection 'model.test.empty_rebuilt' was properly closed.
+[0m22:58:30.129775 [info ] [MainThread]: 
+[0m22:58:30.131626 [info ] [MainThread]: Finished running 3 json nodes models, 4 json rebuild models, 1 table model in 0 hours 0 minutes and 0.77 seconds (0.77s).
+[0m22:58:30.134582 [debug] [MainThread]: Command end result
+[0m22:58:30.206966 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m22:58:30.217031 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m22:58:30.226508 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m22:58:30.238048 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m22:58:30.239571 [info ] [MainThread]: 
+[0m22:58:30.240870 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:58:30.242269 [info ] [MainThread]: 
+[0m22:58:30.243824 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m22:58:30.245545 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.6509414, "process_in_blocks": "1969", "process_kernel_time": 0.835007, "process_mem_max_rss": "256312", "process_out_blocks": "104", "process_user_time": 7.2666}
+[0m22:58:30.247189 [debug] [MainThread]: Command `cli run` succeeded at 22:58:30.247023 after 2.65 seconds
+[0m22:58:30.248994 [debug] [MainThread]: Flushing usage events
+[0m22:58:30.250756 [debug] [MainThread]: test connection "__test" executing: describe test17949275066204547917_test_json_nodes.docs
+[0m22:58:30.252382 [debug] [MainThread]: Acquiring new duckdb connection '_test'
+[0m22:58:30.253964 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:58:30.256121 [debug] [MainThread]: On _test: Close
+[0m22:58:30.257541 [debug] [MainThread]: test connection "__test" executing: 
+            select node_id, parent_id, member_name, array_index, kind,
+                   value_string, value_number, value_boolean
+            from test17949275066204547917_test_json_nodes.docs
+            where doc_key = 1
+            order by node_id
+            
+[0m22:58:30.258864 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:58:30.261818 [debug] [MainThread]: On _test: Close
+[0m22:58:30.263453 [debug] [MainThread]: test connection "__test" executing: select value_string from test17949275066204547917_test_json_nodes.node_strings order by 1
+[0m22:58:30.264782 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:58:30.267612 [debug] [MainThread]: On _test: Close
+[0m22:58:30.301234 [debug] [MainThread]: Dropping schema "database: "memory"
+schema: "test17949275066204547917_test_json_nodes"
+".
+[0m22:58:30.307059 [debug] [MainThread]: Using duckdb connection "_test"
+[0m22:58:30.308742 [debug] [MainThread]: On _test: BEGIN
+[0m22:58:30.310304 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:58:30.312317 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m22:58:30.313638 [debug] [MainThread]: Using duckdb connection "_test"
+[0m22:58:30.314861 [debug] [MainThread]: On _test: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "_test"} */
+drop schema if exists "memory"."test17949275066204547917_test_json_nodes" cascade
+[0m22:58:30.316735 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:58:30.318841 [debug] [MainThread]: On _test: COMMIT
+[0m22:58:30.320146 [debug] [MainThread]: Using duckdb connection "_test"
+[0m22:58:30.321550 [debug] [MainThread]: On _test: COMMIT
+[0m22:58:30.323590 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:58:30.326731 [debug] [MainThread]: On _test: Close

@@ -827,6 +827,61 @@ Example table_function with 2 parameters invocation:
 select * from {{ ref("my_table_function_with_parameters") }}(1, 2)
 ```
 
+### Reversible JSON node relationalization (`json_nodes` / `json_rebuild`)
+
+When business JSON documents need to be cleaned inside the warehouse before being handed back to an
+interface, dbt-duckdb offers a reversible pair of materializations for local SQL models. The
+`json_nodes` materialization lands a model's document output as a plain nodes relation; the
+`json_rebuild` materialization reassembles queryable JSON documents from the *current* node rows.
+
+A `json_nodes` model outputs document keys and JSON documents (columns named by the `key_column`
+and `json_column` configs, defaulting to `doc_key` and `doc_json`):
+
+```sql
+{{ config(materialized='json_nodes') }}
+select id as doc_key, payload as doc_json
+from {{ source('api', 'orders') }}
+```
+
+What lands in the warehouse is a regular table with one row per JSON node:
+
+| column | type | meaning |
+| --- | --- | ---
+| `doc_key` | (from the model) | document identity |
+| `node_id` | bigint | node identity within the document (the root is `1`) |
+| `parent_id` | bigint | parent reference (`null` for the root) |
+| `member_name` | varchar | object member name (set iff the parent is an object) |
+| `array_index` | bigint | 0-based array position (set iff the parent is an array) |
+| `kind` | varchar | `object` \| `array` \| `string` \| `number` \| `boolean` \| `null` |
+| `value_string` | varchar | value iff `kind = 'string'` |
+| `value_number` | double | value iff `kind = 'number'` |
+| `value_boolean` | boolean | value iff `kind = 'boolean'` |
+
+Only node identity, parent references, member names, array positions and typed scalar values are
+stored — never the original JSON text or materialized paths — so every rebuild reflects the current
+rows. The nodes table can be queried via `ref()` like any other model, and cleaned with plain SQL:
+update `value_*` columns, re-attach a subtree inside its document by updating `parent_id` (plus
+`member_name`/`array_index`), and insert or delete node rows.
+
+A `json_rebuild` model outputs node rows in the shape above — usually `select * from` the nodes
+model plus optional cleaning SQL — and lands one rebuilt JSON document per `doc_key`:
+
+```sql
+{{ config(materialized='json_rebuild') }}
+select * from {{ ref('order_nodes') }}
+```
+
+The rebuild preserves the distinctions between strings, numbers, booleans, JSON `null`, missing
+members and empty containers (`{}` vs `[]`), and arrays follow the current `array_index` order.
+Numbers are stored as `DOUBLE`, so the lexical form of integers is normalized on rebuild (`1` comes
+back as `1.0`); the JSON type of every value is preserved.
+
+Before anything is built, the current node rows are validated and invalid structures abort the
+build with a descriptive error: orphan nodes (dangling `parent_id`), cycles, duplicate object
+members or array positions, scalars with children, documents without exactly one root, and other
+inconsistent rows. Empty inputs are fine: both materializations land relations with the correct
+columns and zero rows.
+
 ### Python Support
 
 dbt added support for [Python models in version 1.3.0](https://docs.getdbt.com/docs/build/python-models). For most data platforms,

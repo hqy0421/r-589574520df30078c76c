@@ -1,0 +1,1673 @@
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E005", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Acquiring new duckdb connection '_test'", "name": "NewConnection", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.765522Z"}}
+{"data": {"relation": {"database": "memory", "identifier": "", "schema": "test17949286945160388293_test_json_nodes"}}, "info": {"category": "", "code": "E020", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Creating schema \"database: \"memory\"\nschema: \"test17949286945160388293_test_json_nodes\"\n\"", "name": "SchemaCreation", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.767256Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.770693Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: \n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  ", "name": "SQLQuery", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.772218Z"}}
+{"data": {"connection_state": "init"}, "info": {"category": "", "code": "E037", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Opening a new connection, currently in state init", "name": "NewConnectionOpening", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.773583Z"}}
+{"data": {"elapsed": 0.03166366, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "SQL status: OK in 0.032 seconds", "name": "SQLQueryStatus", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.805397Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.808150Z"}}
+{"data": {"conn_name": "_test", "sql": "BEGIN"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: BEGIN", "name": "SQLQuery", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.809663Z"}}
+{"data": {"elapsed": 0.000508126, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.811556Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.812851Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n    \n        create schema if not exists \"memory\".\"test17949286945160388293_test_json_nodes\"\n    "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: \n    \n    \n        create schema if not exists \"memory\".\"test17949286945160388293_test_json_nodes\"\n    ", "name": "SQLQuery", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.814146Z"}}
+{"data": {"elapsed": 0.00064603303, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.816282Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E018", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLCommit", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.818969Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.820384Z"}}
+{"data": {"conn_name": "_test", "sql": "COMMIT"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLQuery", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.821813Z"}}
+{"data": {"elapsed": 0.000623133, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.823593Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E010", "extra": {}, "invocation_id": "ab2f6af9-1bcb-4192-8a2a-4eed1de23a32", "level": "debug", "msg": "On _test: Close", "name": "ConnectionClosed", "pid": 44477, "thread": "MainThread", "ts": "2026-11-17T15:18:14.824885Z"}}
+
+
+============================== 23:18:14.835582 | 11c508fd-0df5-49d4-a694-2efd3af0f26c ==============================
+[0m23:18:14.835582 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:14.836883 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:14.838217 [debug] [MainThread]: Connection '_test' was properly closed.
+[0m23:18:14.843397 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:14.899778 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:14.920797 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m23:18:15.430683 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:15.439905 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:15.448527 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:15.455419 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:15.457052 [info ] [MainThread]: 
+[0m23:18:15.458279 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:15.459287 [info ] [MainThread]: 
+[0m23:18:15.460980 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:15.462898 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:15.465360 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:15.466616 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:15.467795 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:15.470237 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:15.472685 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:15.474515 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:15.475896 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:15.478221 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.479496 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:15.480801 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:15.483026 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:15.485384 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.486630 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:15.488444 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:15.489646 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.491035 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:15.493166 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:15.495078 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:15.496389 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.497591 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:15.499267 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:15.500461 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:15.503143 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:15.505663 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.507226 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:15.508541 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:15.511062 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:18:15.512783 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:15.514144 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:15.518055 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:18:15.520761 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:15.522109 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:15.523675 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:15.526672 [debug] [MainThread]: On master: BEGIN
+[0m23:18:15.528293 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:15.530202 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:15.531454 [debug] [MainThread]: On master: COMMIT
+[0m23:18:15.532968 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:15.534245 [debug] [MainThread]: On master: COMMIT
+[0m23:18:15.535613 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:15.536698 [debug] [MainThread]: On master: Close
+[0m23:18:15.539878 [debug] [Thread-15 ]: Began running node model.test.base_docs
+[0m23:18:15.541282 [info ] [Thread-15 ]: 1 of 1 START sql json_nodes model test17949286945160388293_test_json_nodes.base_docs  [RUN]
+[0m23:18:15.542656 [debug] [Thread-15 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.base_docs)
+[0m23:18:15.543746 [debug] [Thread-15 ]: Began compiling node model.test.base_docs
+[0m23:18:15.546354 [debug] [Thread-15 ]: Writing injected SQL for node "model.test.base_docs"
+[0m23:18:15.552918 [debug] [Thread-15 ]: Began executing node model.test.base_docs
+[0m23:18:15.554905 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.555975 [debug] [Thread-15 ]: On model.test.base_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.base_docs"} */
+select database_name, type from duckdb_databases()
+[0m23:18:15.557106 [debug] [Thread-15 ]: Opening a new connection, currently in state closed
+[0m23:18:15.558832 [debug] [Thread-15 ]: SQL status: OK in 0.002 seconds
+[0m23:18:15.560668 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.561750 [debug] [Thread-15 ]: On model.test.base_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.base_docs"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:15.563432 [debug] [Thread-15 ]: SQL status: OK in 0.001 seconds
+[0m23:18:15.566964 [debug] [Thread-15 ]: Writing runtime sql for node "model.test.base_docs"
+[0m23:18:15.573968 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.575313 [debug] [Thread-15 ]: On model.test.base_docs: BEGIN
+[0m23:18:15.576804 [debug] [Thread-15 ]: SQL status: OK in 0.000 seconds
+[0m23:18:15.577800 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.578777 [debug] [Thread-15 ]: On model.test.base_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.base_docs"} */
+
+    
+
+    create  table
+      "memory"."test17949286945160388293_test_json_nodes"."base_docs__dbt_tmp"
+  
+    
+    as (
+      
+with recursive __src as (
+  select doc_key as __doc_key, doc_json::json as __doc_json
+  from (
+select * from (values (1, '{"a": [10, 20], "b": "text"}'::json)) as t(doc_key, doc_json)) as __model
+),
+__walk as (
+  select
+    __doc_key,
+    cast(null as varchar[]) as __parent_path,
+    cast([] as varchar[]) as __path,
+    cast(null as varchar) as member_name,
+    cast(null as bigint) as array_index,
+    __doc_json as __j
+  from __src
+  union all
+  select
+    w.__doc_key,
+    w.__path,
+    list_append(w.__path, c.__tag),
+    c.member_name,
+    c.array_index,
+    c.__child_j
+  from __walk w
+  cross join lateral (
+    select ('o' || k.key) as __tag, k.key as member_name, cast(null as bigint) as array_index, (w.__j -> k.key) as __child_j
+    from unnest(json_keys(w.__j)) as k(key)
+    where json_type(w.__j) = 'OBJECT'
+    union all
+    select ('a' || i.idx::varchar), null, i.idx, (w.__j -> i.idx)
+    from unnest(generate_series(0, json_array_length(w.__j)::bigint - 1)) as i(idx)
+    where json_type(w.__j) = 'ARRAY'
+  ) as c
+),
+__nodes as (
+  select
+    __doc_key,
+    row_number() over (partition by __doc_key order by len(__path), to_json(__path)) as node_id,
+    __path,
+    __parent_path,
+    member_name,
+    array_index,
+    __j
+  from __walk
+)
+select
+  n.__doc_key as doc_key,
+  n.node_id,
+  p.node_id as parent_id,
+  n.member_name,
+  n.array_index,
+  case
+    when json_type(n.__j) is null then 'null'
+    when json_type(n.__j) = 'OBJECT' then 'object'
+    when json_type(n.__j) = 'ARRAY' then 'array'
+    when json_type(n.__j) = 'VARCHAR' then 'string'
+    when json_type(n.__j) = 'BOOLEAN' then 'boolean'
+    when json_type(n.__j) = 'NULL' then 'null'
+    else 'number'
+  end as kind,
+  case when json_type(n.__j) = 'VARCHAR' then n.__j ->> '$' end as value_string,
+  case when json_type(n.__j) in ('BIGINT', 'UBIGINT', 'DOUBLE') then (n.__j ->> '$')::double end as value_number,
+  case when json_type(n.__j) = 'BOOLEAN' then (n.__j ->> '$')::boolean end as value_boolean
+from __nodes n
+left join __nodes p on p.__doc_key = n.__doc_key and p.__path = n.__parent_path
+
+    );
+    
+  
+[0m23:18:15.589822 [debug] [Thread-15 ]: SQL status: OK in 0.010 seconds
+[0m23:18:15.593166 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.594588 [debug] [Thread-15 ]: On model.test.base_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.base_docs"} */
+alter table "memory"."test17949286945160388293_test_json_nodes"."base_docs__dbt_tmp" rename to "base_docs"
+[0m23:18:15.596707 [debug] [Thread-15 ]: SQL status: OK in 0.001 seconds
+[0m23:18:15.598513 [debug] [Thread-15 ]: On model.test.base_docs: COMMIT
+[0m23:18:15.599638 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.600768 [debug] [Thread-15 ]: On model.test.base_docs: COMMIT
+[0m23:18:15.602629 [debug] [Thread-15 ]: SQL status: OK in 0.000 seconds
+[0m23:18:15.605096 [debug] [Thread-15 ]: Using duckdb connection "model.test.base_docs"
+[0m23:18:15.606375 [debug] [Thread-15 ]: On model.test.base_docs: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.base_docs"} */
+
+      drop table if exists "memory"."test17949286945160388293_test_json_nodes"."base_docs__dbt_backup" cascade
+    
+[0m23:18:15.607969 [debug] [Thread-15 ]: SQL status: OK in 0.000 seconds
+[0m23:18:15.610073 [debug] [Thread-15 ]: On model.test.base_docs: Close
+[0m23:18:15.611952 [info ] [Thread-15 ]: 1 of 1 OK created sql json_nodes model test17949286945160388293_test_json_nodes.base_docs  [[32mOK[0m in 0.07s]
+[0m23:18:15.613606 [debug] [Thread-15 ]: Finished running node model.test.base_docs
+[0m23:18:15.616811 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:15.618358 [debug] [MainThread]: On master: BEGIN
+[0m23:18:15.619590 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:15.621284 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:15.622687 [debug] [MainThread]: On master: COMMIT
+[0m23:18:15.624334 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:15.625587 [debug] [MainThread]: On master: COMMIT
+[0m23:18:15.627455 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:15.629015 [debug] [MainThread]: On master: Close
+[0m23:18:15.630601 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:15.631880 [debug] [MainThread]: Connection 'model.test.base_docs' was properly closed.
+[0m23:18:15.633124 [info ] [MainThread]: 
+[0m23:18:15.634422 [info ] [MainThread]: Finished running 1 json nodes model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m23:18:15.636480 [debug] [MainThread]: Command end result
+[0m23:18:15.709728 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:15.721948 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:15.733341 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:15.739646 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:15.741329 [info ] [MainThread]: 
+[0m23:18:15.743084 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:18:15.744633 [info ] [MainThread]: 
+[0m23:18:15.746273 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:15.748070 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.9144178, "process_in_blocks": "5057", "process_kernel_time": 1.095233, "process_mem_max_rss": "263740", "process_out_blocks": "192", "process_user_time": 8.268414}
+[0m23:18:15.749818 [debug] [MainThread]: Command `cli run` succeeded at 23:18:15.749530 after 0.92 seconds
+[0m23:18:15.751424 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:18:15.761852 | 7156711d-e617-43e0-abad-fce35bbbc54e ==============================
+[0m23:18:15.761852 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:15.763526 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:15.771169 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:15.888353 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:16.301146 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:18:16.304047 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:18:16.305418 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:18:16.379365 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:16.388538 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:16.398085 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:16.407088 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:16.409020 [info ] [MainThread]: 
+[0m23:18:16.410217 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:16.411430 [info ] [MainThread]: 
+[0m23:18:16.413043 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:16.415200 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:16.418483 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:16.420217 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:16.421774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:16.424062 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:16.426098 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:16.428203 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:16.429581 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:16.431872 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.433378 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:16.434834 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:16.437199 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:16.439429 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.440921 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:16.442709 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:16.444121 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.445505 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:16.447272 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:16.449109 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:16.450288 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.451411 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:16.452871 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:16.454035 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:16.456552 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:16.458834 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.459917 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:16.461373 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:16.463629 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:16.465166 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:16.466559 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:16.470155 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:16.472937 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:16.474954 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:16.477967 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:16.479586 [debug] [MainThread]: On master: BEGIN
+[0m23:18:16.480993 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:16.482870 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:16.484318 [debug] [MainThread]: On master: COMMIT
+[0m23:18:16.485605 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:16.486721 [debug] [MainThread]: On master: COMMIT
+[0m23:18:16.488382 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:16.489662 [debug] [MainThread]: On master: Close
+[0m23:18:16.493328 [debug] [Thread-22 ]: Began running node model.test.bad_orphan
+[0m23:18:16.495240 [info ] [Thread-22 ]: 1 of 1 START sql json_rebuild model test17949286945160388293_test_json_nodes.bad_orphan  [RUN]
+[0m23:18:16.496763 [debug] [Thread-22 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.bad_orphan)
+[0m23:18:16.498270 [debug] [Thread-22 ]: Began compiling node model.test.bad_orphan
+[0m23:18:16.501999 [debug] [Thread-22 ]: Writing injected SQL for node "model.test.bad_orphan"
+[0m23:18:16.511483 [debug] [Thread-22 ]: Began executing node model.test.bad_orphan
+[0m23:18:16.514304 [debug] [Thread-22 ]: Using duckdb connection "model.test.bad_orphan"
+[0m23:18:16.515912 [debug] [Thread-22 ]: On model.test.bad_orphan: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_orphan"} */
+select database_name, type from duckdb_databases()
+[0m23:18:16.517616 [debug] [Thread-22 ]: Opening a new connection, currently in state closed
+[0m23:18:16.519747 [debug] [Thread-22 ]: SQL status: OK in 0.002 seconds
+[0m23:18:16.522267 [debug] [Thread-22 ]: Using duckdb connection "model.test.bad_orphan"
+[0m23:18:16.523740 [debug] [Thread-22 ]: On model.test.bad_orphan: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_orphan"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:16.526333 [debug] [Thread-22 ]: SQL status: OK in 0.001 seconds
+[0m23:18:16.530239 [debug] [Thread-22 ]: Using duckdb connection "model.test.bad_orphan"
+[0m23:18:16.532212 [debug] [Thread-22 ]: On model.test.bad_orphan: BEGIN
+[0m23:18:16.534482 [debug] [Thread-22 ]: SQL status: OK in 0.001 seconds
+[0m23:18:16.536085 [debug] [Thread-22 ]: Using duckdb connection "model.test.bad_orphan"
+[0m23:18:16.537880 [debug] [Thread-22 ]: On model.test.bad_orphan: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_orphan"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+
+        select * from "memory"."test17949286945160388293_test_json_nodes"."base_docs"
+        union all
+        select 1, 999, 888, 'lost', null, 'string', 'x', null, null) as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m23:18:16.551464 [debug] [Thread-22 ]: SQL status: OK in 0.012 seconds
+[0m23:18:16.559595 [debug] [Thread-22 ]: On model.test.bad_orphan: ROLLBACK
+[0m23:18:16.561685 [debug] [Thread-22 ]: On model.test.bad_orphan: Close
+[0m23:18:16.564675 [debug] [Thread-22 ]: Compilation Error in model bad_orphan (models/bad_orphan.sql)
+  Cannot rebuild JSON documents in model 'bad_orphan': the node rows are invalid (2 problem(s)):
+    - cycle detected (1 row(s)): (doc_key=1, node_id=999) node is not reachable from the document root
+    - orphan node (1 row(s)): (doc_key=1, node_id=999) parent_id=888 not found
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_orphan (models/bad_orphan.sql)
+[0m23:18:16.566983 [error] [Thread-22 ]: 1 of 1 ERROR creating sql json_rebuild model test17949286945160388293_test_json_nodes.bad_orphan  [[31mERROR[0m in 0.07s]
+[0m23:18:16.569129 [debug] [Thread-22 ]: Finished running node model.test.bad_orphan
+[0m23:18:16.570653 [debug] [Thread-28 ]: Marking all children of 'model.test.bad_orphan' to be skipped because of status 'error'.  Reason: Compilation Error in model bad_orphan (models/bad_orphan.sql)
+  Cannot rebuild JSON documents in model 'bad_orphan': the node rows are invalid (2 problem(s)):
+    - cycle detected (1 row(s)): (doc_key=1, node_id=999) node is not reachable from the document root
+    - orphan node (1 row(s)): (doc_key=1, node_id=999) parent_id=888 not found
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_orphan (models/bad_orphan.sql).
+[0m23:18:16.574104 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:16.575635 [debug] [MainThread]: On master: BEGIN
+[0m23:18:16.576911 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:16.578554 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:16.579726 [debug] [MainThread]: On master: COMMIT
+[0m23:18:16.581025 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:16.582170 [debug] [MainThread]: On master: COMMIT
+[0m23:18:16.583555 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:16.584579 [debug] [MainThread]: On master: Close
+[0m23:18:16.585706 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:16.586923 [debug] [MainThread]: Connection 'model.test.bad_orphan' was properly closed.
+[0m23:18:16.588160 [info ] [MainThread]: 
+[0m23:18:16.589352 [info ] [MainThread]: Finished running 1 json rebuild model in 0 hours 0 minutes and 0.18 seconds (0.18s).
+[0m23:18:16.590874 [debug] [MainThread]: Command end result
+[0m23:18:16.662940 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:16.673104 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:16.682392 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:16.687615 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:16.688942 [info ] [MainThread]: 
+[0m23:18:16.690386 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:18:16.691896 [info ] [MainThread]: 
+[0m23:18:16.693253 [error] [MainThread]: [[31mERROR[0m]: in model bad_orphan (models/bad_orphan.sql)
+[0m23:18:16.694350 [error] [MainThread]:   Compilation Error in model bad_orphan (models/bad_orphan.sql)
+  Cannot rebuild JSON documents in model 'bad_orphan': the node rows are invalid (2 problem(s)):
+    - cycle detected (1 row(s)): (doc_key=1, node_id=999) node is not reachable from the document root
+    - orphan node (1 row(s)): (doc_key=1, node_id=999) parent_id=888 not found
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_orphan (models/bad_orphan.sql)
+[0m23:18:16.695301 [info ] [MainThread]: 
+[0m23:18:16.696371 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/bad_orphan.sql
+[0m23:18:16.697413 [info ] [MainThread]: 
+[0m23:18:16.698568 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:16.699955 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.9407365, "process_in_blocks": "6479", "process_kernel_time": 1.156908, "process_mem_max_rss": "263740", "process_out_blocks": "192", "process_user_time": 8.592459}
+[0m23:18:16.701246 [debug] [MainThread]: Command `cli run` failed at 23:18:16.701125 after 0.94 seconds
+[0m23:18:16.702433 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:18:16.711995 | 61fb2c1e-2f7b-4656-af00-bc0667ddbe4d ==============================
+[0m23:18:16.711995 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:16.713434 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:16.719678 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:16.781862 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:17.188189 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:18:17.189740 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:18:17.190807 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:18:17.251743 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:17.259789 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:17.268181 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:17.278507 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:17.280607 [info ] [MainThread]: 
+[0m23:18:17.281985 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:17.283252 [info ] [MainThread]: 
+[0m23:18:17.284615 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:17.286565 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:17.289191 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:17.290620 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:17.291960 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:17.294061 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:17.296037 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:17.297685 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:17.298822 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:17.300885 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.301950 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:17.303178 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:17.305246 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:17.307482 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.308499 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:17.310163 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:17.311358 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.312424 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:17.313867 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:17.315314 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:17.316312 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.317400 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:17.318788 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:17.319962 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:17.323289 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:17.325823 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.327134 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:17.328341 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:17.329854 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:17.331158 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:17.332766 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:17.336295 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:17.339244 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:17.341311 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:17.343988 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:17.345532 [debug] [MainThread]: On master: BEGIN
+[0m23:18:17.346812 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:17.348742 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:17.350154 [debug] [MainThread]: On master: COMMIT
+[0m23:18:17.351590 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:17.353148 [debug] [MainThread]: On master: COMMIT
+[0m23:18:17.355264 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:17.356668 [debug] [MainThread]: On master: Close
+[0m23:18:17.360766 [debug] [Thread-29 ]: Began running node model.test.bad_cycle
+[0m23:18:17.362840 [info ] [Thread-29 ]: 1 of 1 START sql json_rebuild model test17949286945160388293_test_json_nodes.bad_cycle  [RUN]
+[0m23:18:17.364674 [debug] [Thread-29 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.bad_cycle)
+[0m23:18:17.366041 [debug] [Thread-29 ]: Began compiling node model.test.bad_cycle
+[0m23:18:17.369143 [debug] [Thread-29 ]: Writing injected SQL for node "model.test.bad_cycle"
+[0m23:18:17.377915 [debug] [Thread-29 ]: Began executing node model.test.bad_cycle
+[0m23:18:17.380768 [debug] [Thread-29 ]: Using duckdb connection "model.test.bad_cycle"
+[0m23:18:17.382448 [debug] [Thread-29 ]: On model.test.bad_cycle: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_cycle"} */
+select database_name, type from duckdb_databases()
+[0m23:18:17.383720 [debug] [Thread-29 ]: Opening a new connection, currently in state closed
+[0m23:18:17.386018 [debug] [Thread-29 ]: SQL status: OK in 0.002 seconds
+[0m23:18:17.388358 [debug] [Thread-29 ]: Using duckdb connection "model.test.bad_cycle"
+[0m23:18:17.389892 [debug] [Thread-29 ]: On model.test.bad_cycle: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_cycle"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:17.392027 [debug] [Thread-29 ]: SQL status: OK in 0.001 seconds
+[0m23:18:17.395891 [debug] [Thread-29 ]: Using duckdb connection "model.test.bad_cycle"
+[0m23:18:17.397384 [debug] [Thread-29 ]: On model.test.bad_cycle: BEGIN
+[0m23:18:17.399026 [debug] [Thread-29 ]: SQL status: OK in 0.000 seconds
+[0m23:18:17.400405 [debug] [Thread-29 ]: Using duckdb connection "model.test.bad_cycle"
+[0m23:18:17.401924 [debug] [Thread-29 ]: On model.test.bad_cycle: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_cycle"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+
+        select doc_key, node_id,
+               case when node_id = 1 then 2 else parent_id end as parent_id,
+               member_name, array_index, kind, value_string, value_number, value_boolean
+        from "memory"."test17949286945160388293_test_json_nodes"."base_docs") as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m23:18:17.410203 [debug] [Thread-29 ]: SQL status: OK in 0.007 seconds
+[0m23:18:17.413651 [debug] [Thread-29 ]: On model.test.bad_cycle: ROLLBACK
+[0m23:18:17.415575 [debug] [Thread-29 ]: On model.test.bad_cycle: Close
+[0m23:18:17.418081 [debug] [Thread-29 ]: Compilation Error in model bad_cycle (models/bad_cycle.sql)
+  Cannot rebuild JSON documents in model 'bad_cycle': the node rows are invalid (7 problem(s)):
+    - array child must have array_index and no member_name (1 row(s)): (doc_key=1, node_id=1) parent kind=array
+    - cycle detected (5 row(s)): (doc_key=1, node_id=1) node is not reachable from the document root; (doc_key=1, node_id=2) node is not reachable from the document root; (doc_key=1, node_id=3) node is not reachable from the document root; ...
+    - document must have exactly one root (1 row(s)): (doc_key=1, node_id=None) roots=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_cycle (models/bad_cycle.sql)
+[0m23:18:17.420149 [error] [Thread-29 ]: 1 of 1 ERROR creating sql json_rebuild model test17949286945160388293_test_json_nodes.bad_cycle  [[31mERROR[0m in 0.06s]
+[0m23:18:17.422018 [debug] [Thread-29 ]: Finished running node model.test.bad_cycle
+[0m23:18:17.423593 [debug] [Thread-35 ]: Marking all children of 'model.test.bad_cycle' to be skipped because of status 'error'.  Reason: Compilation Error in model bad_cycle (models/bad_cycle.sql)
+  Cannot rebuild JSON documents in model 'bad_cycle': the node rows are invalid (7 problem(s)):
+    - array child must have array_index and no member_name (1 row(s)): (doc_key=1, node_id=1) parent kind=array
+    - cycle detected (5 row(s)): (doc_key=1, node_id=1) node is not reachable from the document root; (doc_key=1, node_id=2) node is not reachable from the document root; (doc_key=1, node_id=3) node is not reachable from the document root; ...
+    - document must have exactly one root (1 row(s)): (doc_key=1, node_id=None) roots=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_cycle (models/bad_cycle.sql).
+[0m23:18:17.426474 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:17.427860 [debug] [MainThread]: On master: BEGIN
+[0m23:18:17.428997 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:17.430576 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:17.431806 [debug] [MainThread]: On master: COMMIT
+[0m23:18:17.433031 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:17.435060 [debug] [MainThread]: On master: COMMIT
+[0m23:18:17.436845 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:17.438103 [debug] [MainThread]: On master: Close
+[0m23:18:17.439470 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:17.440805 [debug] [MainThread]: Connection 'model.test.bad_cycle' was properly closed.
+[0m23:18:17.442087 [info ] [MainThread]: 
+[0m23:18:17.443317 [info ] [MainThread]: Finished running 1 json rebuild model in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m23:18:17.444835 [debug] [MainThread]: Command end result
+[0m23:18:17.513382 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:17.523457 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:17.533062 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:17.537986 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:17.539491 [info ] [MainThread]: 
+[0m23:18:17.540787 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:18:17.541989 [info ] [MainThread]: 
+[0m23:18:17.543345 [error] [MainThread]: [[31mERROR[0m]: in model bad_cycle (models/bad_cycle.sql)
+[0m23:18:17.544932 [error] [MainThread]:   Compilation Error in model bad_cycle (models/bad_cycle.sql)
+  Cannot rebuild JSON documents in model 'bad_cycle': the node rows are invalid (7 problem(s)):
+    - array child must have array_index and no member_name (1 row(s)): (doc_key=1, node_id=1) parent kind=array
+    - cycle detected (5 row(s)): (doc_key=1, node_id=1) node is not reachable from the document root; (doc_key=1, node_id=2) node is not reachable from the document root; (doc_key=1, node_id=3) node is not reachable from the document root; ...
+    - document must have exactly one root (1 row(s)): (doc_key=1, node_id=None) roots=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_cycle (models/bad_cycle.sql)
+[0m23:18:17.546486 [info ] [MainThread]: 
+[0m23:18:17.548119 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/bad_cycle.sql
+[0m23:18:17.549468 [info ] [MainThread]: 
+[0m23:18:17.550683 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:17.552137 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8424983, "process_in_blocks": "7902", "process_kernel_time": 1.239482, "process_mem_max_rss": "263740", "process_out_blocks": "200", "process_user_time": 8.829301}
+[0m23:18:17.553536 [debug] [MainThread]: Command `cli run` failed at 23:18:17.553410 after 0.84 seconds
+[0m23:18:17.554669 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:18:17.563584 | f7be8e3d-8b1c-4e05-83da-2f4eb0d1f416 ==============================
+[0m23:18:17.563584 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:17.564970 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:17.570845 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:17.621991 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:18.116863 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:18:18.118230 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:18:18.119304 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:18:18.179762 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:18.188232 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:18.195334 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:18.202306 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:18.203951 [info ] [MainThread]: 
+[0m23:18:18.205283 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:18.206601 [info ] [MainThread]: 
+[0m23:18:18.208026 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:18.210011 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:18.212256 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:18.213486 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:18.214447 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:18.216341 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.217947 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:18.219757 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:18.221438 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:18.223882 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.225475 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:18.226911 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:18.228992 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.230698 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.231748 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:18.232974 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:18.234183 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.235210 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:18.236621 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:18.238158 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:18.239087 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.240029 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:18.241401 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:18.242476 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:18.244749 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:18.246634 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.247734 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:18.248692 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:18.250106 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:18.250977 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.251839 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:18.254201 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:18.256000 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:18.257239 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:18.259080 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:18.260130 [debug] [MainThread]: On master: BEGIN
+[0m23:18:18.261152 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:18.262566 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:18.263561 [debug] [MainThread]: On master: COMMIT
+[0m23:18:18.264489 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:18.265458 [debug] [MainThread]: On master: COMMIT
+[0m23:18:18.266709 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:18.267885 [debug] [MainThread]: On master: Close
+[0m23:18:18.270873 [debug] [Thread-36 ]: Began running node model.test.bad_duplicate_member
+[0m23:18:18.272129 [info ] [Thread-36 ]: 1 of 1 START sql json_rebuild model test17949286945160388293_test_json_nodes.bad_duplicate_member  [RUN]
+[0m23:18:18.273227 [debug] [Thread-36 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.bad_duplicate_member)
+[0m23:18:18.274311 [debug] [Thread-36 ]: Began compiling node model.test.bad_duplicate_member
+[0m23:18:18.277073 [debug] [Thread-36 ]: Writing injected SQL for node "model.test.bad_duplicate_member"
+[0m23:18:18.283608 [debug] [Thread-36 ]: Began executing node model.test.bad_duplicate_member
+[0m23:18:18.285532 [debug] [Thread-36 ]: Using duckdb connection "model.test.bad_duplicate_member"
+[0m23:18:18.286808 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_member"} */
+select database_name, type from duckdb_databases()
+[0m23:18:18.287944 [debug] [Thread-36 ]: Opening a new connection, currently in state closed
+[0m23:18:18.289926 [debug] [Thread-36 ]: SQL status: OK in 0.002 seconds
+[0m23:18:18.291895 [debug] [Thread-36 ]: Using duckdb connection "model.test.bad_duplicate_member"
+[0m23:18:18.293279 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_member"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:18.295527 [debug] [Thread-36 ]: SQL status: OK in 0.001 seconds
+[0m23:18:18.298725 [debug] [Thread-36 ]: Using duckdb connection "model.test.bad_duplicate_member"
+[0m23:18:18.300023 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: BEGIN
+[0m23:18:18.301531 [debug] [Thread-36 ]: SQL status: OK in 0.000 seconds
+[0m23:18:18.302931 [debug] [Thread-36 ]: Using duckdb connection "model.test.bad_duplicate_member"
+[0m23:18:18.304348 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_member"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+
+        select * from "memory"."test17949286945160388293_test_json_nodes"."base_docs"
+        union all
+        select 1, 999, 1, 'a', null, 'number', null, 2.0, null) as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m23:18:18.314302 [debug] [Thread-36 ]: SQL status: OK in 0.009 seconds
+[0m23:18:18.317062 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: ROLLBACK
+[0m23:18:18.319504 [debug] [Thread-36 ]: On model.test.bad_duplicate_member: Close
+[0m23:18:18.321883 [debug] [Thread-36 ]: Compilation Error in model bad_duplicate_member (models/bad_duplicate_member.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_member': the node rows are invalid (1 problem(s)):
+    - duplicate object member (1 row(s)): (doc_key=1, node_id=1) member=a
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_member (models/bad_duplicate_member.sql)
+[0m23:18:18.324085 [error] [Thread-36 ]: 1 of 1 ERROR creating sql json_rebuild model test17949286945160388293_test_json_nodes.bad_duplicate_member  [[31mERROR[0m in 0.05s]
+[0m23:18:18.326130 [debug] [Thread-36 ]: Finished running node model.test.bad_duplicate_member
+[0m23:18:18.327611 [debug] [Thread-42 ]: Marking all children of 'model.test.bad_duplicate_member' to be skipped because of status 'error'.  Reason: Compilation Error in model bad_duplicate_member (models/bad_duplicate_member.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_member': the node rows are invalid (1 problem(s)):
+    - duplicate object member (1 row(s)): (doc_key=1, node_id=1) member=a
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_member (models/bad_duplicate_member.sql).
+[0m23:18:18.330108 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:18.331434 [debug] [MainThread]: On master: BEGIN
+[0m23:18:18.332429 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:18.333970 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:18.335037 [debug] [MainThread]: On master: COMMIT
+[0m23:18:18.336291 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:18.337536 [debug] [MainThread]: On master: COMMIT
+[0m23:18:18.339448 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:18.340414 [debug] [MainThread]: On master: Close
+[0m23:18:18.341608 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:18.342467 [debug] [MainThread]: Connection 'model.test.bad_duplicate_member' was properly closed.
+[0m23:18:18.343399 [info ] [MainThread]: 
+[0m23:18:18.344535 [info ] [MainThread]: Finished running 1 json rebuild model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m23:18:18.346061 [debug] [MainThread]: Command end result
+[0m23:18:18.403831 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:18.412357 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:18.419395 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:18.423300 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:18.424252 [info ] [MainThread]: 
+[0m23:18:18.425267 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:18:18.426323 [info ] [MainThread]: 
+[0m23:18:18.427298 [error] [MainThread]: [[31mERROR[0m]: in model bad_duplicate_member (models/bad_duplicate_member.sql)
+[0m23:18:18.428498 [error] [MainThread]:   Compilation Error in model bad_duplicate_member (models/bad_duplicate_member.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_member': the node rows are invalid (1 problem(s)):
+    - duplicate object member (1 row(s)): (doc_key=1, node_id=1) member=a
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_member (models/bad_duplicate_member.sql)
+[0m23:18:18.429467 [info ] [MainThread]: 
+[0m23:18:18.430731 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/bad_duplicate_member.sql
+[0m23:18:18.431610 [info ] [MainThread]: 
+[0m23:18:18.432533 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:18.433861 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8725511, "process_in_blocks": "9324", "process_kernel_time": 1.307961, "process_mem_max_rss": "263740", "process_out_blocks": "200", "process_user_time": 9.163782}
+[0m23:18:18.435231 [debug] [MainThread]: Command `cli run` failed at 23:18:18.435112 after 0.87 seconds
+[0m23:18:18.436377 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:18:18.445022 | 0abed011-fc98-4f2e-88fa-f02640aa1c1a ==============================
+[0m23:18:18.445022 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:18.446338 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:18.451913 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:18.502725 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:18.852501 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:18:18.853880 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:18:18.854886 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:18:18.916912 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:18.923792 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:18.931668 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:18.939773 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:18.941314 [info ] [MainThread]: 
+[0m23:18:18.942537 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:18.943585 [info ] [MainThread]: 
+[0m23:18:18.944917 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:18.946715 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:18.949118 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:18.950194 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:18.951479 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:18.953674 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.956009 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:18.957637 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:18.958778 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:18.960713 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.962177 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:18.963416 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:18.965453 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.967470 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.968528 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:18.970002 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:18.971186 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.972283 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:18.973751 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:18.975131 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:18.976250 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.977605 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:18.979721 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:18.981141 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:18.983801 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:18.985861 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.987051 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:18.988332 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:18.990155 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.991386 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:18.992779 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:18.995472 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:18.997583 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:18.999068 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:19.000891 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.002582 [debug] [MainThread]: On master: BEGIN
+[0m23:18:19.003976 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:19.005792 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:19.006978 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.008022 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.008971 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.010259 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:19.011664 [debug] [MainThread]: On master: Close
+[0m23:18:19.014914 [debug] [Thread-43 ]: Began running node model.test.bad_duplicate_array_position
+[0m23:18:19.016241 [info ] [Thread-43 ]: 1 of 1 START sql json_rebuild model test17949286945160388293_test_json_nodes.bad_duplicate_array_position  [RUN]
+[0m23:18:19.017525 [debug] [Thread-43 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.bad_duplicate_array_position)
+[0m23:18:19.019065 [debug] [Thread-43 ]: Began compiling node model.test.bad_duplicate_array_position
+[0m23:18:19.021819 [debug] [Thread-43 ]: Writing injected SQL for node "model.test.bad_duplicate_array_position"
+[0m23:18:19.028153 [debug] [Thread-43 ]: Began executing node model.test.bad_duplicate_array_position
+[0m23:18:19.030021 [debug] [Thread-43 ]: Using duckdb connection "model.test.bad_duplicate_array_position"
+[0m23:18:19.031093 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_array_position"} */
+select database_name, type from duckdb_databases()
+[0m23:18:19.032027 [debug] [Thread-43 ]: Opening a new connection, currently in state closed
+[0m23:18:19.034262 [debug] [Thread-43 ]: SQL status: OK in 0.002 seconds
+[0m23:18:19.036369 [debug] [Thread-43 ]: Using duckdb connection "model.test.bad_duplicate_array_position"
+[0m23:18:19.037689 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_array_position"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:19.039758 [debug] [Thread-43 ]: SQL status: OK in 0.001 seconds
+[0m23:18:19.042936 [debug] [Thread-43 ]: Using duckdb connection "model.test.bad_duplicate_array_position"
+[0m23:18:19.044184 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: BEGIN
+[0m23:18:19.045623 [debug] [Thread-43 ]: SQL status: OK in 0.000 seconds
+[0m23:18:19.046840 [debug] [Thread-43 ]: Using duckdb connection "model.test.bad_duplicate_array_position"
+[0m23:18:19.048048 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_duplicate_array_position"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+
+        select * from "memory"."test17949286945160388293_test_json_nodes"."base_docs"
+        union all
+        select 1, 999, 2, null, 0, 'number', null, 2.0, null) as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m23:18:19.057444 [debug] [Thread-43 ]: SQL status: OK in 0.008 seconds
+[0m23:18:19.060081 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: ROLLBACK
+[0m23:18:19.061477 [debug] [Thread-43 ]: On model.test.bad_duplicate_array_position: Close
+[0m23:18:19.063336 [debug] [Thread-43 ]: Compilation Error in model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_array_position': the node rows are invalid (1 problem(s)):
+    - duplicate array position (1 row(s)): (doc_key=1, node_id=2) position=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+[0m23:18:19.064825 [error] [Thread-43 ]: 1 of 1 ERROR creating sql json_rebuild model test17949286945160388293_test_json_nodes.bad_duplicate_array_position  [[31mERROR[0m in 0.05s]
+[0m23:18:19.066215 [debug] [Thread-43 ]: Finished running node model.test.bad_duplicate_array_position
+[0m23:18:19.067935 [debug] [Thread-49 ]: Marking all children of 'model.test.bad_duplicate_array_position' to be skipped because of status 'error'.  Reason: Compilation Error in model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_array_position': the node rows are invalid (1 problem(s)):
+    - duplicate array position (1 row(s)): (doc_key=1, node_id=2) position=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_array_position (models/bad_duplicate_array_position.sql).
+[0m23:18:19.070646 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.071725 [debug] [MainThread]: On master: BEGIN
+[0m23:18:19.072736 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:19.074828 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:19.076043 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.077158 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.078223 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.080193 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:19.081520 [debug] [MainThread]: On master: Close
+[0m23:18:19.083038 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:19.084033 [debug] [MainThread]: Connection 'model.test.bad_duplicate_array_position' was properly closed.
+[0m23:18:19.085159 [info ] [MainThread]: 
+[0m23:18:19.086531 [info ] [MainThread]: Finished running 1 json rebuild model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m23:18:19.088169 [debug] [MainThread]: Command end result
+[0m23:18:19.147219 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:19.154333 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:19.162286 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:19.166621 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:19.167648 [info ] [MainThread]: 
+[0m23:18:19.168691 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:18:19.169607 [info ] [MainThread]: 
+[0m23:18:19.170658 [error] [MainThread]: [[31mERROR[0m]: in model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+[0m23:18:19.171969 [error] [MainThread]:   Compilation Error in model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+  Cannot rebuild JSON documents in model 'bad_duplicate_array_position': the node rows are invalid (1 problem(s)):
+    - duplicate array position (1 row(s)): (doc_key=1, node_id=2) position=0
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_duplicate_array_position (models/bad_duplicate_array_position.sql)
+[0m23:18:19.173057 [info ] [MainThread]: 
+[0m23:18:19.173993 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/bad_duplicate_array_position.sql
+[0m23:18:19.174962 [info ] [MainThread]: 
+[0m23:18:19.175879 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:19.177164 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.7341197, "process_in_blocks": "10747", "process_kernel_time": 1.373911, "process_mem_max_rss": "263740", "process_out_blocks": "200", "process_user_time": 9.386368}
+[0m23:18:19.178446 [debug] [MainThread]: Command `cli run` failed at 23:18:19.178303 after 0.74 seconds
+[0m23:18:19.179387 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:18:19.187314 | f04f7979-e930-4ac6-bac5-6e95510fd27b ==============================
+[0m23:18:19.187314 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:18:19.189343 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'target_path': '/task-cache/dbt-target', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'False', 'empty': 'False', 'log_path': '/workspace/logs/test17949286945160388293', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'hints_enabled': 'True', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-11/profile1', 'invocation_command': 'dbt tests/functional/adapter/test_json_nodes.py -q', 'indirect_selection': 'eager'}
+[0m23:18:19.194995 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:18:19.246146 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:18:19.618728 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:18:19.620154 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:18:19.621242 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:18:19.690417 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:19.700390 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:19.711129 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:19.720853 [info ] [MainThread]: Found 6 models, 521 macros
+[0m23:18:19.722662 [info ] [MainThread]: 
+[0m23:18:19.723942 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:18:19.725262 [info ] [MainThread]: 
+[0m23:18:19.726728 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:18:19.728675 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:18:19.731192 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:18:19.732356 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:18:19.733638 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:18:19.736384 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:18:19.738341 [debug] [ThreadPool]: On list_memory: Close
+[0m23:18:19.739902 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:19.741213 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+"
+[0m23:18:19.743363 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.744509 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:18:19.745590 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:19.747820 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:19.750075 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.751305 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:19.754131 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:18:19.755501 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.756639 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949286945160388293_test_json_nodes"} */
+
+    
+    
+        create schema if not exists "memory"."test17949286945160388293_test_json_nodes"
+    
+[0m23:18:19.758178 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:19.759659 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:19.760648 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.761919 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: COMMIT
+[0m23:18:19.763509 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:18:19.764649 [debug] [ThreadPool]: On create_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:19.767201 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949286945160388293_test_json_nodes, now list_memory_test17949286945160388293_test_json_nodes)
+[0m23:18:19.769521 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.770798 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: BEGIN
+[0m23:18:19.772000 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:18:19.773580 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:19.774851 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949286945160388293_test_json_nodes"
+[0m23:18:19.776075 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949286945160388293_test_json_nodes"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949286945160388293_test_json_nodes'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:18:19.778960 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:18:19.781449 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: ROLLBACK
+[0m23:18:19.783659 [debug] [ThreadPool]: On list_memory_test17949286945160388293_test_json_nodes: Close
+[0m23:18:19.786007 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.787287 [debug] [MainThread]: On master: BEGIN
+[0m23:18:19.789865 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:19.791842 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:19.793179 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.794526 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.795899 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.797740 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:19.799158 [debug] [MainThread]: On master: Close
+[0m23:18:19.802429 [debug] [Thread-50 ]: Began running node model.test.bad_scalar_with_children
+[0m23:18:19.804300 [info ] [Thread-50 ]: 1 of 1 START sql json_rebuild model test17949286945160388293_test_json_nodes.bad_scalar_with_children  [RUN]
+[0m23:18:19.805809 [debug] [Thread-50 ]: Re-using an available connection from the pool (formerly list_memory_test17949286945160388293_test_json_nodes, now model.test.bad_scalar_with_children)
+[0m23:18:19.807144 [debug] [Thread-50 ]: Began compiling node model.test.bad_scalar_with_children
+[0m23:18:19.810450 [debug] [Thread-50 ]: Writing injected SQL for node "model.test.bad_scalar_with_children"
+[0m23:18:19.818737 [debug] [Thread-50 ]: Began executing node model.test.bad_scalar_with_children
+[0m23:18:19.821054 [debug] [Thread-50 ]: Using duckdb connection "model.test.bad_scalar_with_children"
+[0m23:18:19.822588 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_scalar_with_children"} */
+select database_name, type from duckdb_databases()
+[0m23:18:19.823951 [debug] [Thread-50 ]: Opening a new connection, currently in state closed
+[0m23:18:19.826493 [debug] [Thread-50 ]: SQL status: OK in 0.002 seconds
+[0m23:18:19.828827 [debug] [Thread-50 ]: Using duckdb connection "model.test.bad_scalar_with_children"
+[0m23:18:19.830422 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_scalar_with_children"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949286945160388293_test_json_nodes')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:18:19.832852 [debug] [Thread-50 ]: SQL status: OK in 0.001 seconds
+[0m23:18:19.836822 [debug] [Thread-50 ]: Using duckdb connection "model.test.bad_scalar_with_children"
+[0m23:18:19.838433 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: BEGIN
+[0m23:18:19.840414 [debug] [Thread-50 ]: SQL status: OK in 0.000 seconds
+[0m23:18:19.841768 [debug] [Thread-50 ]: Using duckdb connection "model.test.bad_scalar_with_children"
+[0m23:18:19.842988 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.bad_scalar_with_children"} */
+
+with recursive __src as (
+  select
+    doc_key as __doc_key,
+    node_id,
+    parent_id,
+    member_name,
+    array_index,
+    kind,
+    value_string,
+    value_number,
+    value_boolean
+  from (
+
+        select * from "memory"."test17949286945160388293_test_json_nodes"."base_docs"
+        union all
+        select 1, 999, 3, null, null, 'number', null, 1.0, null) as __model
+),
+__reach as (
+  -- nodes reachable from a document root; 'union' dedups so cycles terminate
+  select __doc_key, node_id
+  from __src
+  where parent_id is null
+  union
+  select s.__doc_key, s.node_id
+  from __src s
+  join __reach r on r.__doc_key = s.__doc_key and r.node_id = s.parent_id
+),
+__problems as (
+  select 'document key must not be null' as check_name, cast(null as varchar) as __doc_key, cast(null as bigint) as node_id,
+         'rows=' || count(*)::varchar as detail
+  from __src
+  where __doc_key is null
+  having count(*) > 0
+  union all
+  select 'unknown node kind', __doc_key::varchar, node_id, 'kind=' || coalesce(kind, 'NULL')
+  from __src
+  where kind not in ('object', 'array', 'string', 'number', 'boolean', 'null') or kind is null
+  union all
+  select 'duplicate node id', __doc_key::varchar, node_id, 'count=' || count(*)::varchar
+  from __src
+  group by __doc_key, node_id
+  having count(*) > 1
+  union all
+  select 'document must have exactly one root', __doc_key::varchar, null,
+         'roots=' || count(*) filter (parent_id is null)::varchar
+  from __src
+  group by __doc_key
+  having count(*) filter (parent_id is null) <> 1
+  union all
+  select 'orphan node', s.__doc_key::varchar, s.node_id, 'parent_id=' || s.parent_id::varchar || ' not found'
+  from __src s
+  where s.parent_id is not null
+    and not exists (select 1 from __src p where p.__doc_key = s.__doc_key and p.node_id = s.parent_id)
+  union all
+  select 'cycle detected', s.__doc_key::varchar, s.node_id, 'node is not reachable from the document root'
+  from __src s
+  where not exists (select 1 from __reach r where r.__doc_key = s.__doc_key and r.node_id = s.node_id)
+  union all
+  select 'duplicate object member', __doc_key::varchar, parent_id, 'member=' || member_name
+  from __src
+  where member_name is not null
+  group by __doc_key, parent_id, member_name
+  having count(*) > 1
+  union all
+  select 'duplicate array position', __doc_key::varchar, parent_id, 'position=' || array_index::varchar
+  from __src
+  where array_index is not null
+  group by __doc_key, parent_id, array_index
+  having count(*) > 1
+  union all
+  select 'scalar node has children', p.__doc_key::varchar, p.node_id, 'kind=' || p.kind
+  from __src p
+  where p.kind in ('string', 'number', 'boolean', 'null')
+    and exists (select 1 from __src c where c.__doc_key = p.__doc_key and c.parent_id = p.node_id)
+  union all
+  select 'object child must have member_name and no array_index', c.__doc_key::varchar, c.node_id, 'parent kind=object'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'object' and (c.member_name is null or c.array_index is not null)
+  union all
+  select 'array child must have array_index and no member_name', c.__doc_key::varchar, c.node_id, 'parent kind=array'
+  from __src c
+  join __src p on p.__doc_key = c.__doc_key and p.node_id = c.parent_id
+  where p.kind = 'array' and (c.array_index is null or c.member_name is not null)
+  union all
+  select 'root node must not have member_name or array_index', __doc_key::varchar, node_id, ''
+  from __src
+  where parent_id is null and (member_name is not null or array_index is not null)
+  union all
+  select 'array_index must be non-negative', __doc_key::varchar, node_id, 'array_index=' || array_index::varchar
+  from __src
+  where array_index < 0
+  union all
+  select 'scalar node missing value', __doc_key::varchar, node_id, 'kind=' || kind || ' requires a non-null value'
+  from __src
+  where (kind = 'string' and value_string is null)
+     or (kind = 'number' and value_number is null)
+     or (kind = 'boolean' and value_boolean is null)
+)
+select check_name, __doc_key as doc_key, node_id, detail
+from __problems
+order by check_name, doc_key, node_id
+
+[0m23:18:19.855035 [debug] [Thread-50 ]: SQL status: OK in 0.011 seconds
+[0m23:18:19.858034 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: ROLLBACK
+[0m23:18:19.859605 [debug] [Thread-50 ]: On model.test.bad_scalar_with_children: Close
+[0m23:18:19.861867 [debug] [Thread-50 ]: Compilation Error in model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+  Cannot rebuild JSON documents in model 'bad_scalar_with_children': the node rows are invalid (1 problem(s)):
+    - scalar node has children (1 row(s)): (doc_key=1, node_id=3) kind=string
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+[0m23:18:19.863431 [error] [Thread-50 ]: 1 of 1 ERROR creating sql json_rebuild model test17949286945160388293_test_json_nodes.bad_scalar_with_children  [[31mERROR[0m in 0.06s]
+[0m23:18:19.864775 [debug] [Thread-50 ]: Finished running node model.test.bad_scalar_with_children
+[0m23:18:19.866054 [debug] [Thread-56 ]: Marking all children of 'model.test.bad_scalar_with_children' to be skipped because of status 'error'.  Reason: Compilation Error in model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+  Cannot rebuild JSON documents in model 'bad_scalar_with_children': the node rows are invalid (1 problem(s)):
+    - scalar node has children (1 row(s)): (doc_key=1, node_id=3) kind=string
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_scalar_with_children (models/bad_scalar_with_children.sql).
+[0m23:18:19.868670 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.869809 [debug] [MainThread]: On master: BEGIN
+[0m23:18:19.870814 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:19.872209 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:19.873537 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.874743 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:18:19.875926 [debug] [MainThread]: On master: COMMIT
+[0m23:18:19.877343 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:18:19.878438 [debug] [MainThread]: On master: Close
+[0m23:18:19.879822 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:18:19.880883 [debug] [MainThread]: Connection 'model.test.bad_scalar_with_children' was properly closed.
+[0m23:18:19.881964 [info ] [MainThread]: 
+[0m23:18:19.883041 [info ] [MainThread]: Finished running 1 json rebuild model in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m23:18:19.884401 [debug] [MainThread]: Command end result
+[0m23:18:19.949757 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:18:19.959249 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:18:19.970306 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:18:19.976548 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:18:19.978083 [info ] [MainThread]: 
+[0m23:18:19.979559 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:18:19.980994 [info ] [MainThread]: 
+[0m23:18:19.982513 [error] [MainThread]: [[31mERROR[0m]: in model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+[0m23:18:19.984662 [error] [MainThread]:   Compilation Error in model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+  Cannot rebuild JSON documents in model 'bad_scalar_with_children': the node rows are invalid (1 problem(s)):
+    - scalar node has children (1 row(s)): (doc_key=1, node_id=3) kind=string
+  
+  > in macro materialization_json_rebuild_duckdb (macros/materializations/json_nodes.sql)
+  > called by model bad_scalar_with_children (models/bad_scalar_with_children.sql)
+[0m23:18:19.986331 [info ] [MainThread]: 
+[0m23:18:19.987698 [info ] [MainThread]:   compiled code at /task-cache/dbt-target/compiled/test/models/bad_scalar_with_children.sql
+[0m23:18:19.989030 [info ] [MainThread]: 
+[0m23:18:19.990200 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:18:19.991550 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.80631596, "process_in_blocks": "12169", "process_kernel_time": 1.43203, "process_mem_max_rss": "263740", "process_out_blocks": "208", "process_user_time": 9.650994}
+[0m23:18:19.992957 [debug] [MainThread]: Command `cli run` failed at 23:18:19.992836 after 0.81 seconds
+[0m23:18:19.994115 [debug] [MainThread]: Flushing usage events
+[0m23:18:19.995353 [debug] [MainThread]: test connection "__test" executing: select count(*) from system.information_schema.tables where table_schema = 'test17949286945160388293_test_json_nodes' and table_name = 'bad_orphan'
+[0m23:18:19.996648 [debug] [MainThread]: Acquiring new duckdb connection '_test'
+[0m23:18:19.998004 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:20.000965 [debug] [MainThread]: On _test: Close
+[0m23:18:20.003424 [debug] [MainThread]: Dropping schema "database: "memory"
+schema: "test17949286945160388293_test_json_nodes"
+".
+[0m23:18:20.006960 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:18:20.008693 [debug] [MainThread]: On _test: BEGIN
+[0m23:18:20.011557 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:18:20.013445 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:18:20.014609 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:18:20.016251 [debug] [MainThread]: On _test: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "_test"} */
+drop schema if exists "memory"."test17949286945160388293_test_json_nodes" cascade
+[0m23:18:20.018526 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:20.020939 [debug] [MainThread]: On _test: COMMIT
+[0m23:18:20.022274 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:18:20.023758 [debug] [MainThread]: On _test: COMMIT
+[0m23:18:20.026076 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:18:20.027931 [debug] [MainThread]: On _test: Close

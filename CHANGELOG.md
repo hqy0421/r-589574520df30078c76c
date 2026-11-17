@@ -1,3 +1,14 @@
+Unreleased
+----------
+
+- Added reversible JSON node relationalization for local SQL models: the `json_nodes` materialization
+  lands a model's (document key, JSON) output as a plain nodes relation (node identity, parent
+  reference, object member name, array position, typed scalar values) that can be queried via
+  `ref()` and modified with plain SQL, and the `json_rebuild` materialization validates the current
+  node rows (clear errors for orphans, cycles, duplicate members or array positions, scalars with
+  children, etc.) and rebuilds queryable JSON documents from them, preserving
+  string/number/boolean/null/missing/empty-container distinctions and array order
+
 1.11.1 (2026-10-26)
 -------------------
 

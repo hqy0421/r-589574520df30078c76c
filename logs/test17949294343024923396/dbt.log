@@ -1,0 +1,732 @@
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E005", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Acquiring new duckdb connection '_test'", "name": "NewConnection", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.029860Z"}}
+{"data": {"relation": {"database": "memory", "identifier": "", "schema": "test17949294343024923396_test_table_function"}}, "info": {"category": "", "code": "E020", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Creating schema \"database: \"memory\"\nschema: \"test17949294343024923396_test_table_function\"\n\"", "name": "SchemaCreation", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.037067Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.089375Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: \n    \n        select type from duckdb_databases()\n        where lower(database_name)='memory'\n        and type != 'duckdb'\n    \n  ", "name": "SQLQuery", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.091066Z"}}
+{"data": {"connection_state": "init"}, "info": {"category": "", "code": "E037", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Opening a new connection, currently in state init", "name": "NewConnectionOpening", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.093191Z"}}
+{"data": {"elapsed": 0.038437054, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "SQL status: OK in 0.038 seconds", "name": "SQLQueryStatus", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.131687Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.134612Z"}}
+{"data": {"conn_name": "_test", "sql": "BEGIN"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: BEGIN", "name": "SQLQuery", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.136812Z"}}
+{"data": {"elapsed": 0.00045672304, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "SQL status: OK in 0.000 seconds", "name": "SQLQueryStatus", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.139432Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.141259Z"}}
+{"data": {"conn_name": "_test", "sql": "\n    \n    \n        create schema if not exists \"memory\".\"test17949294343024923396_test_table_function\"\n    "}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: \n    \n    \n        create schema if not exists \"memory\".\"test17949294343024923396_test_table_function\"\n    ", "name": "SQLQuery", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.142938Z"}}
+{"data": {"elapsed": 0.000951049, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.146108Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E018", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLCommit", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.148506Z"}}
+{"data": {"conn_name": "_test", "conn_type": "duckdb"}, "info": {"category": "", "code": "E015", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "Using duckdb connection \"_test\"", "name": "ConnectionUsed", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.149988Z"}}
+{"data": {"conn_name": "_test", "sql": "COMMIT"}, "info": {"category": "", "code": "E016", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: COMMIT", "name": "SQLQuery", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.151260Z"}}
+{"data": {"elapsed": 0.000668433, "query_id": "", "status": "OK"}, "info": {"category": "", "code": "E017", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "SQL status: OK in 0.001 seconds", "name": "SQLQueryStatus", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.153172Z"}}
+{"data": {"conn_name": "_test"}, "info": {"category": "", "code": "E010", "extra": {}, "invocation_id": "d6d47642-7722-47db-9dda-04b7ebbfa7ec", "level": "debug", "msg": "On _test: Close", "name": "ConnectionClosed", "pid": 46072, "thread": "MainThread", "ts": "2026-11-17T15:30:35.154573Z"}}
+
+
+============================== 23:30:35.195450 | f6e98f12-7f46-4875-aab1-2d013f65bcc1 ==============================
+[0m23:30:35.195450 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:30:35.197041 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'version_check': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-13/profile0', 'fail_fast': 'False', 'log_path': '/workspace/logs/test17949294343024923396', 'maximum_seed_size_mib': '1', 'debug': 'False', 'target_path': '/task-cache/dbt-target', 'invocation_command': 'dbt tests/functional/adapter/test_table_function.py tests/functional/adapter/test_empty.py -q', 'cache_selected_only': 'False', 'quiet': 'False', 'empty': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default'}
+[0m23:30:35.198563 [debug] [MainThread]: Connection '_test' was properly closed.
+[0m23:30:35.287711 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:30:35.346927 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:30:35.413323 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m23:30:36.935137 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:30:36.942336 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:30:36.969738 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:30:37.005222 [info ] [MainThread]: Found 10 models, 1 seed, 521 macros
+[0m23:30:37.007549 [info ] [MainThread]: 
+[0m23:30:37.010220 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:30:37.011316 [info ] [MainThread]: 
+[0m23:30:37.012541 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:30:37.014189 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:30:37.019022 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:30:37.020272 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:30:37.021105 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:30:37.023141 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:30:37.024877 [debug] [ThreadPool]: On list_memory: Close
+[0m23:30:37.026297 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949294343024923396_test_table_function)
+[0m23:30:37.027377 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949294343024923396_test_table_function"
+"
+[0m23:30:37.029069 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.030139 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949294343024923396_test_table_function"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:30:37.030990 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:30:37.033088 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:30:37.035075 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.035993 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: BEGIN
+[0m23:30:37.037610 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:30:37.038788 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.039667 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949294343024923396_test_table_function"} */
+
+    
+    
+        create schema if not exists "memory"."test17949294343024923396_test_table_function"
+    
+[0m23:30:37.041133 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:30:37.042577 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: COMMIT
+[0m23:30:37.043882 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.044903 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: COMMIT
+[0m23:30:37.046772 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:30:37.047781 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: Close
+[0m23:30:37.053892 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949294343024923396_test_table_function, now list_memory_test17949294343024923396_test_table_function)
+[0m23:30:37.058672 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.059895 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: BEGIN
+[0m23:30:37.060992 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:30:37.062454 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:30:37.063289 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.064421 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949294343024923396_test_table_function"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949294343024923396_test_table_function'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:30:37.068563 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:30:37.070486 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: ROLLBACK
+[0m23:30:37.072411 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: Close
+[0m23:30:37.074233 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.075266 [debug] [MainThread]: On master: BEGIN
+[0m23:30:37.076132 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:30:37.077390 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:37.078716 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.079661 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.080517 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.082173 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:37.083250 [debug] [MainThread]: On master: Close
+[0m23:30:37.087701 [debug] [Thread-1 (]: Began running node seed.test.seed
+[0m23:30:37.089181 [info ] [Thread-1 (]: 1 of 1 START seed file test17949294343024923396_test_table_function.seed ....... [RUN]
+[0m23:30:37.090497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_memory_test17949294343024923396_test_table_function, now seed.test.seed)
+[0m23:30:37.091435 [debug] [Thread-1 (]: Began compiling node seed.test.seed
+[0m23:30:37.092685 [debug] [Thread-1 (]: Began executing node seed.test.seed
+[0m23:30:37.095485 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.096928 [debug] [Thread-1 (]: On seed.test.seed: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "seed.test.seed"} */
+select database_name, type from duckdb_databases()
+[0m23:30:37.098126 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:30:37.100773 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:30:37.103533 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.105267 [debug] [Thread-1 (]: On seed.test.seed: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "seed.test.seed"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949294343024923396_test_table_function')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:30:37.108496 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:30:37.130451 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.134989 [debug] [Thread-1 (]: On seed.test.seed: BEGIN
+[0m23:30:37.137016 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:30:37.138684 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.139880 [debug] [Thread-1 (]: On seed.test.seed: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "seed.test.seed"} */
+
+    create table "memory"."test17949294343024923396_test_table_function"."seed" ("a" integer,"b" integer,"c" integer)
+  
+[0m23:30:37.142267 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.152108 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.153383 [debug] [Thread-1 (]: On seed.test.seed: 
+          COPY "memory"."test17949294343024923396_test_table_function"."seed" FROM '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-13/project0/seeds/seed.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',', NULLSTR ['', 'null', 'NULL', 'Null'])
+        ...
+[0m23:30:37.158426 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m23:30:37.164674 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.test.seed"
+[0m23:30:37.182394 [debug] [Thread-1 (]: On seed.test.seed: COMMIT
+[0m23:30:37.183711 [debug] [Thread-1 (]: Using duckdb connection "seed.test.seed"
+[0m23:30:37.184657 [debug] [Thread-1 (]: On seed.test.seed: COMMIT
+[0m23:30:37.186103 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.188239 [debug] [Thread-1 (]: On seed.test.seed: Close
+[0m23:30:37.191516 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file test17949294343024923396_test_table_function.seed ... [[32mINSERT 3[0m in 0.10s]
+[0m23:30:37.192818 [debug] [Thread-1 (]: Finished running node seed.test.seed
+[0m23:30:37.195021 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.196262 [debug] [MainThread]: On master: BEGIN
+[0m23:30:37.197203 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:30:37.198686 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:37.199574 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.200379 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.201148 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.202364 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:30:37.203439 [debug] [MainThread]: On master: Close
+[0m23:30:37.204649 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:30:37.205486 [debug] [MainThread]: Connection 'seed.test.seed' was properly closed.
+[0m23:30:37.206331 [info ] [MainThread]: 
+[0m23:30:37.207187 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m23:30:37.208236 [debug] [MainThread]: Command end result
+[0m23:30:37.256977 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:30:37.263387 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:30:37.271353 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:30:37.282570 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:30:37.284015 [info ] [MainThread]: 
+[0m23:30:37.285137 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:30:37.286276 [info ] [MainThread]: 
+[0m23:30:37.287449 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m23:30:37.288671 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 2.0988028, "process_in_blocks": "2011", "process_kernel_time": 0.540937, "process_mem_max_rss": "206600", "process_out_blocks": "128", "process_user_time": 6.095635}
+[0m23:30:37.289724 [debug] [MainThread]: Command `cli seed` succeeded at 23:30:37.289579 after 2.10 seconds
+[0m23:30:37.290616 [debug] [MainThread]: Flushing usage events
+
+
+============================== 23:30:37.298309 | 7dadf92d-d37d-4f41-ae67-b433237b753b ==============================
+[0m23:30:37.298309 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:30:37.299477 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'version_check': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/node/.solocoder-posix-tmp/pytest-of-node/pytest-13/profile0', 'fail_fast': 'False', 'log_path': '/workspace/logs/test17949294343024923396', 'maximum_seed_size_mib': '1', 'debug': 'False', 'target_path': '/task-cache/dbt-target', 'invocation_command': 'dbt tests/functional/adapter/test_table_function.py tests/functional/adapter/test_empty.py -q', 'cache_selected_only': 'False', 'quiet': 'False', 'empty': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default'}
+[0m23:30:37.304756 [info ] [MainThread]: Registered adapter: duckdb=0.0.0
+[0m23:30:37.350140 [debug] [MainThread]: checksum: e9957200bf7000fda5bd283ff63bf0fd6e1f584f977e2820ce0897d7d3b4f39f, vars: {}, profile: test, target: default, version: 1.12.6
+[0m23:30:37.701855 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:30:37.703158 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:30:37.704448 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:30:37.766477 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:30:37.772935 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:30:37.779487 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:30:37.788867 [info ] [MainThread]: Found 10 models, 1 seed, 521 macros
+[0m23:30:37.790949 [info ] [MainThread]: 
+[0m23:30:37.792348 [info ] [MainThread]: Concurrency: 4 threads (target='default')
+[0m23:30:37.794264 [info ] [MainThread]: 
+[0m23:30:37.796755 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:30:37.800461 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m23:30:37.803727 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m23:30:37.804866 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"memory"'
+    
+  
+  
+[0m23:30:37.806032 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:30:37.809016 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m23:30:37.812048 [debug] [ThreadPool]: On list_memory: Close
+[0m23:30:37.814165 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_test17949294343024923396_test_table_function)
+[0m23:30:37.815950 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "test17949294343024923396_test_table_function"
+"
+[0m23:30:37.818297 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.819387 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949294343024923396_test_table_function"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='memory'
+        and type != 'duckdb'
+    
+  
+[0m23:30:37.820474 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:30:37.822653 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:30:37.824908 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.826157 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: BEGIN
+[0m23:30:37.827936 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:30:37.829284 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.830348 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "create_memory_test17949294343024923396_test_table_function"} */
+
+    
+    
+        create schema if not exists "memory"."test17949294343024923396_test_table_function"
+    
+[0m23:30:37.831753 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:30:37.833082 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: COMMIT
+[0m23:30:37.834014 [debug] [ThreadPool]: Using duckdb connection "create_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.835338 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: COMMIT
+[0m23:30:37.837207 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:30:37.838323 [debug] [ThreadPool]: On create_memory_test17949294343024923396_test_table_function: Close
+[0m23:30:37.840948 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_test17949294343024923396_test_table_function, now list_memory_test17949294343024923396_test_table_function)
+[0m23:30:37.843243 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.844523 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: BEGIN
+[0m23:30:37.845421 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:30:37.846906 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:30:37.847737 [debug] [ThreadPool]: Using duckdb connection "list_memory_test17949294343024923396_test_table_function"
+[0m23:30:37.848768 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "list_memory_test17949294343024923396_test_table_function"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'test17949294343024923396_test_table_function'
+    and lower(table_catalog) = 'memory'
+  
+[0m23:30:37.851715 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:30:37.853729 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: ROLLBACK
+[0m23:30:37.855078 [debug] [ThreadPool]: On list_memory_test17949294343024923396_test_table_function: Close
+[0m23:30:37.856954 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.858064 [debug] [MainThread]: On master: BEGIN
+[0m23:30:37.859071 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:30:37.860481 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:37.861341 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.862242 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:37.863231 [debug] [MainThread]: On master: COMMIT
+[0m23:30:37.864631 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:30:37.865704 [debug] [MainThread]: On master: Close
+[0m23:30:37.868411 [debug] [Thread-8 (]: Began running node model.test.example_table
+[0m23:30:37.869518 [info ] [Thread-8 (]: 1 of 10 START sql table model test17949294343024923396_test_table_function.example_table  [RUN]
+[0m23:30:37.870860 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly list_memory_test17949294343024923396_test_table_function, now model.test.example_table)
+[0m23:30:37.871927 [debug] [Thread-8 (]: Began compiling node model.test.example_table
+[0m23:30:37.877989 [debug] [Thread-8 (]: Writing injected SQL for node "model.test.example_table"
+[0m23:30:37.883836 [debug] [Thread-8 (]: Began executing node model.test.example_table
+[0m23:30:37.885921 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.887082 [debug] [Thread-8 (]: On model.test.example_table: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.example_table"} */
+select database_name, type from duckdb_databases()
+[0m23:30:37.888332 [debug] [Thread-8 (]: Opening a new connection, currently in state closed
+[0m23:30:37.890304 [debug] [Thread-8 (]: SQL status: OK in 0.002 seconds
+[0m23:30:37.892211 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.893372 [debug] [Thread-8 (]: On model.test.example_table: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.example_table"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('memory')
+                      and lower(schema_name) = lower('test17949294343024923396_test_table_function')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:30:37.895438 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.943594 [debug] [Thread-8 (]: Writing runtime sql for node "model.test.example_table"
+[0m23:30:37.949176 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.950402 [debug] [Thread-8 (]: On model.test.example_table: BEGIN
+[0m23:30:37.951830 [debug] [Thread-8 (]: SQL status: OK in 0.000 seconds
+[0m23:30:37.952891 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.953858 [debug] [Thread-8 (]: On model.test.example_table: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.example_table"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."example_table__dbt_tmp"
+  
+    
+    as (
+      
+select * from "memory"."test17949294343024923396_test_table_function"."seed"
+    );
+    
+  
+[0m23:30:37.955770 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.960539 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.961569 [debug] [Thread-8 (]: On model.test.example_table: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.example_table"} */
+alter table "memory"."test17949294343024923396_test_table_function"."example_table__dbt_tmp" rename to "example_table"
+[0m23:30:37.963027 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.966654 [debug] [Thread-8 (]: On model.test.example_table: COMMIT
+[0m23:30:37.967779 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.968759 [debug] [Thread-8 (]: On model.test.example_table: COMMIT
+[0m23:30:37.970096 [debug] [Thread-8 (]: SQL status: OK in 0.000 seconds
+[0m23:30:37.975049 [debug] [Thread-8 (]: Using duckdb connection "model.test.example_table"
+[0m23:30:37.976344 [debug] [Thread-8 (]: On model.test.example_table: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.example_table"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."example_table__dbt_backup" cascade
+    
+[0m23:30:37.977767 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:37.979563 [debug] [Thread-8 (]: On model.test.example_table: Close
+[0m23:30:37.980898 [info ] [Thread-8 (]: 1 of 10 OK created sql table model test17949294343024923396_test_table_function.example_table  [[32mOK[0m in 0.11s]
+[0m23:30:37.982102 [debug] [Thread-8 (]: Finished running node model.test.example_table
+[0m23:30:37.983701 [debug] [Thread-10 ]: Began running node model.test.my_table_function
+[0m23:30:37.984070 [debug] [Thread-11 ]: Began running node model.test.my_table_function_1_param
+[0m23:30:37.984449 [debug] [Thread-9 (]: Began running node model.test.my_table_function_1_param_with_comma
+[0m23:30:37.984820 [debug] [Thread-8 (]: Began running node model.test.my_table_function_2_params
+[0m23:30:37.985595 [info ] [Thread-10 ]: 2 of 10 START sql table_function model test17949294343024923396_test_table_function.my_table_function  [RUN]
+[0m23:30:37.986549 [info ] [Thread-11 ]: 3 of 10 START sql table_function model test17949294343024923396_test_table_function.my_table_function_1_param  [RUN]
+[0m23:30:37.995595 [info ] [Thread-9 (]: 4 of 10 START sql table_function model test17949294343024923396_test_table_function.my_table_function_1_param_with_comma  [RUN]
+[0m23:30:37.997974 [info ] [Thread-8 (]: 5 of 10 START sql table_function model test17949294343024923396_test_table_function.my_table_function_2_params  [RUN]
+[0m23:30:37.999810 [debug] [Thread-10 ]: Acquiring new duckdb connection 'model.test.my_table_function'
+[0m23:30:38.001715 [debug] [Thread-11 ]: Acquiring new duckdb connection 'model.test.my_table_function_1_param'
+[0m23:30:38.003826 [debug] [Thread-9 (]: Acquiring new duckdb connection 'model.test.my_table_function_1_param_with_comma'
+[0m23:30:38.005176 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly model.test.example_table, now model.test.my_table_function_2_params)
+[0m23:30:38.006230 [debug] [Thread-10 ]: Began compiling node model.test.my_table_function
+[0m23:30:38.007428 [debug] [Thread-11 ]: Began compiling node model.test.my_table_function_1_param
+[0m23:30:38.008966 [debug] [Thread-9 (]: Began compiling node model.test.my_table_function_1_param_with_comma
+[0m23:30:38.010352 [debug] [Thread-8 (]: Began compiling node model.test.my_table_function_2_params
+[0m23:30:38.014193 [debug] [Thread-10 ]: Writing injected SQL for node "model.test.my_table_function"
+[0m23:30:38.018973 [debug] [Thread-11 ]: Writing injected SQL for node "model.test.my_table_function_1_param"
+[0m23:30:38.022616 [debug] [Thread-9 (]: Writing injected SQL for node "model.test.my_table_function_1_param_with_comma"
+[0m23:30:38.026093 [debug] [Thread-8 (]: Writing injected SQL for node "model.test.my_table_function_2_params"
+[0m23:30:38.032430 [debug] [Thread-10 ]: Began executing node model.test.my_table_function
+[0m23:30:38.033266 [debug] [Thread-11 ]: Began executing node model.test.my_table_function_1_param
+[0m23:30:38.034002 [debug] [Thread-9 (]: Began executing node model.test.my_table_function_1_param_with_comma
+[0m23:30:38.040008 [debug] [Thread-8 (]: Began executing node model.test.my_table_function_2_params
+[0m23:30:38.040912 [debug] [Thread-10 ]: Writing runtime sql for node "model.test.my_table_function"
+[0m23:30:38.043096 [debug] [Thread-11 ]: Writing runtime sql for node "model.test.my_table_function_1_param"
+[0m23:30:38.046040 [debug] [Thread-9 (]: Writing runtime sql for node "model.test.my_table_function_1_param_with_comma"
+[0m23:30:38.048953 [debug] [Thread-8 (]: Writing runtime sql for node "model.test.my_table_function_2_params"
+[0m23:30:38.054632 [debug] [Thread-10 ]: Using duckdb connection "model.test.my_table_function"
+[0m23:30:38.055946 [debug] [Thread-11 ]: Using duckdb connection "model.test.my_table_function_1_param"
+[0m23:30:38.056633 [debug] [Thread-10 ]: On model.test.my_table_function: BEGIN
+[0m23:30:38.057225 [debug] [Thread-9 (]: Using duckdb connection "model.test.my_table_function_1_param_with_comma"
+[0m23:30:38.057753 [debug] [Thread-8 (]: Using duckdb connection "model.test.my_table_function_2_params"
+[0m23:30:38.058941 [debug] [Thread-11 ]: On model.test.my_table_function_1_param: BEGIN
+[0m23:30:38.060250 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m23:30:38.061326 [debug] [Thread-9 (]: On model.test.my_table_function_1_param_with_comma: BEGIN
+[0m23:30:38.062294 [debug] [Thread-8 (]: On model.test.my_table_function_2_params: BEGIN
+[0m23:30:38.063472 [debug] [Thread-11 ]: Opening a new connection, currently in state init
+[0m23:30:38.065095 [debug] [Thread-10 ]: SQL status: OK in 0.005 seconds
+[0m23:30:38.065872 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m23:30:38.066799 [debug] [Thread-8 (]: Opening a new connection, currently in state closed
+[0m23:30:38.068347 [debug] [Thread-11 ]: SQL status: OK in 0.005 seconds
+[0m23:30:38.068740 [debug] [Thread-10 ]: Using duckdb connection "model.test.my_table_function"
+[0m23:30:38.070062 [debug] [Thread-9 (]: SQL status: OK in 0.004 seconds
+[0m23:30:38.070996 [debug] [Thread-8 (]: SQL status: OK in 0.004 seconds
+[0m23:30:38.072070 [debug] [Thread-11 ]: Using duckdb connection "model.test.my_table_function_1_param"
+[0m23:30:38.073157 [debug] [Thread-10 ]: On model.test.my_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.my_table_function"} */
+create or replace function "memory"."test17949294343024923396_test_table_function"."my_table_function"(
+        
+        
+      ) as table (
+        
+select * from "memory"."test17949294343024923396_test_table_function"."example_table");
+[0m23:30:38.074385 [debug] [Thread-9 (]: Using duckdb connection "model.test.my_table_function_1_param_with_comma"
+[0m23:30:38.075595 [debug] [Thread-8 (]: Using duckdb connection "model.test.my_table_function_2_params"
+[0m23:30:38.076842 [debug] [Thread-11 ]: On model.test.my_table_function_1_param: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.my_table_function_1_param"} */
+create or replace function "memory"."test17949294343024923396_test_table_function"."my_table_function_1_param"(
+        
+          where_a
+        
+      ) as table (
+        
+select * from "memory"."test17949294343024923396_test_table_function"."example_table" 
+where a = where_a);
+[0m23:30:38.078890 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.079318 [debug] [Thread-9 (]: On model.test.my_table_function_1_param_with_comma: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.my_table_function_1_param_with_comma"} */
+create or replace function "memory"."test17949294343024923396_test_table_function"."my_table_function_1_param_with_comma"(
+        
+          where_a, where_b
+        
+      ) as table (
+        
+select * from "memory"."test17949294343024923396_test_table_function"."example_table" 
+where 1=1
+    and a = where_a 
+    and b = where_b);
+[0m23:30:38.080359 [debug] [Thread-8 (]: On model.test.my_table_function_2_params: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.my_table_function_2_params"} */
+create or replace function "memory"."test17949294343024923396_test_table_function"."my_table_function_2_params"(
+        
+          where_a, where_b
+        
+      ) as table (
+        
+select * from "memory"."test17949294343024923396_test_table_function"."example_table" 
+where 1=1
+    and a = where_a 
+    and b = where_b);
+[0m23:30:38.082240 [debug] [Thread-11 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.083404 [debug] [Thread-10 ]: On model.test.my_table_function: COMMIT
+[0m23:30:38.084944 [debug] [Thread-9 (]: SQL status: OK in 0.001 seconds
+[0m23:30:38.086372 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:38.087575 [debug] [Thread-11 ]: On model.test.my_table_function_1_param: COMMIT
+[0m23:30:38.088670 [debug] [Thread-10 ]: Using duckdb connection "model.test.my_table_function"
+[0m23:30:38.090349 [debug] [Thread-9 (]: On model.test.my_table_function_1_param_with_comma: COMMIT
+[0m23:30:38.092616 [debug] [Thread-8 (]: On model.test.my_table_function_2_params: COMMIT
+[0m23:30:38.093986 [debug] [Thread-11 ]: Using duckdb connection "model.test.my_table_function_1_param"
+[0m23:30:38.095319 [debug] [Thread-10 ]: On model.test.my_table_function: COMMIT
+[0m23:30:38.096418 [debug] [Thread-9 (]: Using duckdb connection "model.test.my_table_function_1_param_with_comma"
+[0m23:30:38.097420 [debug] [Thread-8 (]: Using duckdb connection "model.test.my_table_function_2_params"
+[0m23:30:38.098469 [debug] [Thread-11 ]: On model.test.my_table_function_1_param: COMMIT
+[0m23:30:38.100470 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.101189 [debug] [Thread-9 (]: On model.test.my_table_function_1_param_with_comma: COMMIT
+[0m23:30:38.102173 [debug] [Thread-8 (]: On model.test.my_table_function_2_params: COMMIT
+[0m23:30:38.103620 [debug] [Thread-11 ]: SQL status: OK in 0.000 seconds
+[0m23:30:38.104724 [debug] [Thread-10 ]: On model.test.my_table_function: Close
+[0m23:30:38.106232 [debug] [Thread-9 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.107300 [debug] [Thread-8 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.108443 [debug] [Thread-11 ]: On model.test.my_table_function_1_param: Close
+[0m23:30:38.109783 [info ] [Thread-10 ]: 2 of 10 OK created sql table_function model test17949294343024923396_test_table_function.my_table_function  [[32mOK[0m in 0.11s]
+[0m23:30:38.110854 [debug] [Thread-9 (]: On model.test.my_table_function_1_param_with_comma: Close
+[0m23:30:38.112035 [debug] [Thread-8 (]: On model.test.my_table_function_2_params: Close
+[0m23:30:38.113559 [info ] [Thread-11 ]: 3 of 10 OK created sql table_function model test17949294343024923396_test_table_function.my_table_function_1_param  [[32mOK[0m in 0.11s]
+[0m23:30:38.114508 [debug] [Thread-10 ]: Finished running node model.test.my_table_function
+[0m23:30:38.115744 [info ] [Thread-9 (]: 4 of 10 OK created sql table_function model test17949294343024923396_test_table_function.my_table_function_1_param_with_comma  [[32mOK[0m in 0.11s]
+[0m23:30:38.116949 [info ] [Thread-8 (]: 5 of 10 OK created sql table_function model test17949294343024923396_test_table_function.my_table_function_2_params  [[32mOK[0m in 0.11s]
+[0m23:30:38.117867 [debug] [Thread-11 ]: Finished running node model.test.my_table_function_1_param
+[0m23:30:38.119101 [debug] [Thread-10 ]: Began running node model.test.use_table_function
+[0m23:30:38.120037 [debug] [Thread-9 (]: Finished running node model.test.my_table_function_1_param_with_comma
+[0m23:30:38.121034 [debug] [Thread-8 (]: Finished running node model.test.my_table_function_2_params
+[0m23:30:38.122466 [debug] [Thread-11 ]: Began running node model.test.use_table_function_1_param
+[0m23:30:38.123402 [info ] [Thread-10 ]: 6 of 10 START sql table model test17949294343024923396_test_table_function.use_table_function  [RUN]
+[0m23:30:38.124532 [debug] [Thread-9 (]: Began running node model.test.use_table_function_1_param_with_comma
+[0m23:30:38.125555 [debug] [Thread-8 (]: Began running node model.test.use_table_function_2_params
+[0m23:30:38.126442 [info ] [Thread-11 ]: 7 of 10 START sql table model test17949294343024923396_test_table_function.use_table_function_1_param  [RUN]
+[0m23:30:38.127557 [debug] [Thread-10 ]: Re-using an available connection from the pool (formerly model.test.my_table_function, now model.test.use_table_function)
+[0m23:30:38.128572 [info ] [Thread-9 (]: 8 of 10 START sql table model test17949294343024923396_test_table_function.use_table_function_1_param_with_comma  [RUN]
+[0m23:30:38.129909 [info ] [Thread-8 (]: 9 of 10 START sql table model test17949294343024923396_test_table_function.use_table_function_2_params  [RUN]
+[0m23:30:38.131568 [debug] [Thread-11 ]: Re-using an available connection from the pool (formerly model.test.my_table_function_1_param, now model.test.use_table_function_1_param)
+[0m23:30:38.133203 [debug] [Thread-10 ]: Began compiling node model.test.use_table_function
+[0m23:30:38.135062 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly model.test.my_table_function_1_param_with_comma, now model.test.use_table_function_1_param_with_comma)
+[0m23:30:38.136842 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly model.test.my_table_function_2_params, now model.test.use_table_function_2_params)
+[0m23:30:38.138448 [debug] [Thread-11 ]: Began compiling node model.test.use_table_function_1_param
+[0m23:30:38.142451 [debug] [Thread-10 ]: Writing injected SQL for node "model.test.use_table_function"
+[0m23:30:38.144339 [debug] [Thread-9 (]: Began compiling node model.test.use_table_function_1_param_with_comma
+[0m23:30:38.145801 [debug] [Thread-8 (]: Began compiling node model.test.use_table_function_2_params
+[0m23:30:38.149230 [debug] [Thread-11 ]: Writing injected SQL for node "model.test.use_table_function_1_param"
+[0m23:30:38.154407 [debug] [Thread-9 (]: Writing injected SQL for node "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.157613 [debug] [Thread-8 (]: Writing injected SQL for node "model.test.use_table_function_2_params"
+[0m23:30:38.159299 [debug] [Thread-10 ]: Began executing node model.test.use_table_function
+[0m23:30:38.164922 [debug] [Thread-10 ]: Writing runtime sql for node "model.test.use_table_function"
+[0m23:30:38.166438 [debug] [Thread-11 ]: Began executing node model.test.use_table_function_1_param
+[0m23:30:38.166843 [debug] [Thread-8 (]: Began executing node model.test.use_table_function_2_params
+[0m23:30:38.167212 [debug] [Thread-9 (]: Began executing node model.test.use_table_function_1_param_with_comma
+[0m23:30:38.171138 [debug] [Thread-11 ]: Writing runtime sql for node "model.test.use_table_function_1_param"
+[0m23:30:38.174689 [debug] [Thread-8 (]: Writing runtime sql for node "model.test.use_table_function_2_params"
+[0m23:30:38.175262 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function"
+[0m23:30:38.178843 [debug] [Thread-9 (]: Writing runtime sql for node "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.181495 [debug] [Thread-10 ]: On model.test.use_table_function: BEGIN
+[0m23:30:38.184134 [debug] [Thread-11 ]: Using duckdb connection "model.test.use_table_function_1_param"
+[0m23:30:38.184624 [debug] [Thread-10 ]: Opening a new connection, currently in state closed
+[0m23:30:38.185318 [debug] [Thread-8 (]: Using duckdb connection "model.test.use_table_function_2_params"
+[0m23:30:38.186004 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: BEGIN
+[0m23:30:38.186415 [debug] [Thread-9 (]: Using duckdb connection "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.187639 [debug] [Thread-10 ]: SQL status: OK in 0.003 seconds
+[0m23:30:38.188229 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: BEGIN
+[0m23:30:38.189116 [debug] [Thread-11 ]: Opening a new connection, currently in state closed
+[0m23:30:38.189920 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: BEGIN
+[0m23:30:38.190771 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function"
+[0m23:30:38.191668 [debug] [Thread-8 (]: Opening a new connection, currently in state closed
+[0m23:30:38.192940 [debug] [Thread-11 ]: SQL status: OK in 0.004 seconds
+[0m23:30:38.193536 [debug] [Thread-9 (]: Opening a new connection, currently in state closed
+[0m23:30:38.194411 [debug] [Thread-10 ]: On model.test.use_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."use_table_function__dbt_tmp"
+  
+    
+    as (
+      
+select * from "memory"."test17949294343024923396_test_table_function"."my_table_function"()
+    );
+    
+  
+[0m23:30:38.195616 [debug] [Thread-8 (]: SQL status: OK in 0.004 seconds
+[0m23:30:38.196264 [debug] [Thread-11 ]: Using duckdb connection "model.test.use_table_function_1_param"
+[0m23:30:38.197454 [debug] [Thread-9 (]: SQL status: OK in 0.004 seconds
+[0m23:30:38.199199 [debug] [Thread-8 (]: Using duckdb connection "model.test.use_table_function_2_params"
+[0m23:30:38.199625 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.200378 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param__dbt_tmp"
+  
+    
+    as (
+      
+select * from "memory"."test17949294343024923396_test_table_function"."my_table_function_1_param"(4)
+    );
+    
+  
+[0m23:30:38.201162 [debug] [Thread-9 (]: Using duckdb connection "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.202072 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_2_params"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."use_table_function_2_params__dbt_tmp"
+  
+    
+    as (
+      
+select * from "memory"."test17949294343024923396_test_table_function"."my_table_function_2_params"(4, 5)
+    );
+    
+  
+[0m23:30:38.205002 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function"
+[0m23:30:38.206878 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param_with_comma"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param_with_comma__dbt_tmp"
+  
+    
+    as (
+      
+select * from "memory"."test17949294343024923396_test_table_function"."my_table_function_1_param_with_comma"(4, 5)
+    );
+    
+  
+[0m23:30:38.207424 [debug] [Thread-11 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.208941 [debug] [Thread-10 ]: On model.test.use_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function"} */
+alter table "memory"."test17949294343024923396_test_table_function"."use_table_function__dbt_tmp" rename to "use_table_function"
+[0m23:30:38.209343 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:38.211147 [debug] [Thread-9 (]: SQL status: OK in 0.001 seconds
+[0m23:30:38.213156 [debug] [Thread-11 ]: Using duckdb connection "model.test.use_table_function_1_param"
+[0m23:30:38.214855 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.216896 [debug] [Thread-8 (]: Using duckdb connection "model.test.use_table_function_2_params"
+[0m23:30:38.220463 [debug] [Thread-9 (]: Using duckdb connection "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.221842 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param"} */
+alter table "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param__dbt_tmp" rename to "use_table_function_1_param"
+[0m23:30:38.223960 [debug] [Thread-10 ]: On model.test.use_table_function: COMMIT
+[0m23:30:38.225002 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_2_params"} */
+alter table "memory"."test17949294343024923396_test_table_function"."use_table_function_2_params__dbt_tmp" rename to "use_table_function_2_params"
+[0m23:30:38.225980 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param_with_comma"} */
+alter table "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param_with_comma__dbt_tmp" rename to "use_table_function_1_param_with_comma"
+[0m23:30:38.227590 [debug] [Thread-11 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.228297 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function"
+[0m23:30:38.229875 [debug] [Thread-8 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.230731 [debug] [Thread-9 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.232696 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: COMMIT
+[0m23:30:38.233668 [debug] [Thread-10 ]: On model.test.use_table_function: COMMIT
+[0m23:30:38.235571 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: COMMIT
+[0m23:30:38.237707 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: COMMIT
+[0m23:30:38.238899 [debug] [Thread-11 ]: Using duckdb connection "model.test.use_table_function_1_param"
+[0m23:30:38.240545 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.240944 [debug] [Thread-8 (]: Using duckdb connection "model.test.use_table_function_2_params"
+[0m23:30:38.241838 [debug] [Thread-9 (]: Using duckdb connection "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.242751 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: COMMIT
+[0m23:30:38.244660 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function"
+[0m23:30:38.245954 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: COMMIT
+[0m23:30:38.246957 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: COMMIT
+[0m23:30:38.248399 [debug] [Thread-11 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.248770 [debug] [Thread-10 ]: On model.test.use_table_function: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."use_table_function__dbt_backup" cascade
+    
+[0m23:30:38.250026 [debug] [Thread-8 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.251141 [debug] [Thread-9 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.254144 [debug] [Thread-11 ]: Using duckdb connection "model.test.use_table_function_1_param"
+[0m23:30:38.255745 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.257199 [debug] [Thread-8 (]: Using duckdb connection "model.test.use_table_function_2_params"
+[0m23:30:38.259173 [debug] [Thread-9 (]: Using duckdb connection "model.test.use_table_function_1_param_with_comma"
+[0m23:30:38.260172 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param__dbt_backup" cascade
+    
+[0m23:30:38.261892 [debug] [Thread-10 ]: On model.test.use_table_function: Close
+[0m23:30:38.262700 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_2_params"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."use_table_function_2_params__dbt_backup" cascade
+    
+[0m23:30:38.263467 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_1_param_with_comma"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."use_table_function_1_param_with_comma__dbt_backup" cascade
+    
+[0m23:30:38.264846 [debug] [Thread-11 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.266201 [info ] [Thread-10 ]: 6 of 10 OK created sql table model test17949294343024923396_test_table_function.use_table_function  [[32mOK[0m in 0.14s]
+[0m23:30:38.268096 [debug] [Thread-8 (]: SQL status: OK in 0.001 seconds
+[0m23:30:38.268921 [debug] [Thread-9 (]: SQL status: OK in 0.000 seconds
+[0m23:30:38.270552 [debug] [Thread-11 ]: On model.test.use_table_function_1_param: Close
+[0m23:30:38.271792 [debug] [Thread-10 ]: Finished running node model.test.use_table_function
+[0m23:30:38.274446 [debug] [Thread-8 (]: On model.test.use_table_function_2_params: Close
+[0m23:30:38.276519 [debug] [Thread-9 (]: On model.test.use_table_function_1_param_with_comma: Close
+[0m23:30:38.278201 [info ] [Thread-11 ]: 7 of 10 OK created sql table model test17949294343024923396_test_table_function.use_table_function_1_param  [[32mOK[0m in 0.15s]
+[0m23:30:38.279436 [debug] [Thread-10 ]: Began running node model.test.use_table_function_after_adding_column
+[0m23:30:38.280603 [info ] [Thread-8 (]: 9 of 10 OK created sql table model test17949294343024923396_test_table_function.use_table_function_2_params  [[32mOK[0m in 0.14s]
+[0m23:30:38.282013 [info ] [Thread-9 (]: 8 of 10 OK created sql table model test17949294343024923396_test_table_function.use_table_function_1_param_with_comma  [[32mOK[0m in 0.15s]
+[0m23:30:38.283070 [debug] [Thread-11 ]: Finished running node model.test.use_table_function_1_param
+[0m23:30:38.284107 [info ] [Thread-10 ]: 10 of 10 START sql table model test17949294343024923396_test_table_function.use_table_function_after_adding_column  [RUN]
+[0m23:30:38.285125 [debug] [Thread-8 (]: Finished running node model.test.use_table_function_2_params
+[0m23:30:38.286217 [debug] [Thread-9 (]: Finished running node model.test.use_table_function_1_param_with_comma
+[0m23:30:38.288291 [debug] [Thread-10 ]: Re-using an available connection from the pool (formerly model.test.use_table_function, now model.test.use_table_function_after_adding_column)
+[0m23:30:38.290517 [debug] [Thread-10 ]: Began compiling node model.test.use_table_function_after_adding_column
+[0m23:30:38.293617 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.294827 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_after_adding_column"} */
+
+    
+alter table "memory"."test17949294343024923396_test_table_function"."example_table" add column d integer default 42
+
+  
+[0m23:30:38.295845 [debug] [Thread-10 ]: Opening a new connection, currently in state closed
+[0m23:30:38.297854 [debug] [Thread-10 ]: SQL status: OK in 0.002 seconds
+[0m23:30:38.299687 [debug] [Thread-10 ]: Writing injected SQL for node "model.test.use_table_function_after_adding_column"
+[0m23:30:38.305371 [debug] [Thread-10 ]: Began executing node model.test.use_table_function_after_adding_column
+[0m23:30:38.309517 [debug] [Thread-10 ]: Writing runtime sql for node "model.test.use_table_function_after_adding_column"
+[0m23:30:38.313606 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.314737 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: BEGIN
+[0m23:30:38.316181 [debug] [Thread-10 ]: SQL status: OK in 0.000 seconds
+[0m23:30:38.317112 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.317967 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_after_adding_column"} */
+
+    
+
+    create  table
+      "memory"."test17949294343024923396_test_table_function"."use_table_function_after_adding_column__dbt_tmp"
+  
+    
+    as (
+      -- depends_on: "memory"."test17949294343024923396_test_table_function"."use_table_function"
+
+
+
+
+select * from "memory"."test17949294343024923396_test_table_function"."my_table_function"()
+    );
+    
+  
+[0m23:30:38.319742 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.322257 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.323227 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_after_adding_column"} */
+alter table "memory"."test17949294343024923396_test_table_function"."use_table_function_after_adding_column__dbt_tmp" rename to "use_table_function_after_adding_column"
+[0m23:30:38.324829 [debug] [Thread-10 ]: SQL status: OK in 0.001 seconds
+[0m23:30:38.326892 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: COMMIT
+[0m23:30:38.327865 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.328559 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: COMMIT
+[0m23:30:38.329897 [debug] [Thread-10 ]: SQL status: OK in 0.000 seconds
+[0m23:30:38.331958 [debug] [Thread-10 ]: Using duckdb connection "model.test.use_table_function_after_adding_column"
+[0m23:30:38.332749 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "node_id": "model.test.use_table_function_after_adding_column"} */
+
+      drop table if exists "memory"."test17949294343024923396_test_table_function"."use_table_function_after_adding_column__dbt_backup" cascade
+    
+[0m23:30:38.333845 [debug] [Thread-10 ]: SQL status: OK in 0.000 seconds
+[0m23:30:38.335534 [debug] [Thread-10 ]: On model.test.use_table_function_after_adding_column: Close
+[0m23:30:38.337080 [info ] [Thread-10 ]: 10 of 10 OK created sql table model test17949294343024923396_test_table_function.use_table_function_after_adding_column  [[32mOK[0m in 0.05s]
+[0m23:30:38.338191 [debug] [Thread-10 ]: Finished running node model.test.use_table_function_after_adding_column
+[0m23:30:38.340678 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:38.341918 [debug] [MainThread]: On master: BEGIN
+[0m23:30:38.343040 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:30:38.344381 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:38.345188 [debug] [MainThread]: On master: COMMIT
+[0m23:30:38.346043 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:30:38.346679 [debug] [MainThread]: On master: COMMIT
+[0m23:30:38.347676 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:30:38.348329 [debug] [MainThread]: On master: Close
+[0m23:30:38.349312 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:30:38.350066 [debug] [MainThread]: Connection 'model.test.use_table_function_2_params' was properly closed.
+[0m23:30:38.351122 [debug] [MainThread]: Connection 'model.test.use_table_function_after_adding_column' was properly closed.
+[0m23:30:38.351973 [debug] [MainThread]: Connection 'model.test.use_table_function_1_param' was properly closed.
+[0m23:30:38.352823 [debug] [MainThread]: Connection 'model.test.use_table_function_1_param_with_comma' was properly closed.
+[0m23:30:38.353982 [info ] [MainThread]: 
+[0m23:30:38.354957 [info ] [MainThread]: Finished running 6 table models, 4 table function models in 0 hours 0 minutes and 0.56 seconds (0.56s).
+[0m23:30:38.357050 [debug] [MainThread]: Command end result
+[0m23:30:38.405337 [debug] [MainThread]: Wrote artifact WritableManifest to /task-cache/dbt-target/manifest.json
+[0m23:30:38.411430 [debug] [MainThread]: Wrote artifact SemanticManifest to /task-cache/dbt-target/semantic_manifest.json
+[0m23:30:38.418510 [debug] [MainThread]: Wrote artifact OsiDocument to /task-cache/dbt-target/osi_document.json
+[0m23:30:38.424085 [debug] [MainThread]: Wrote artifact RunExecutionResult to /task-cache/dbt-target/run_results.json
+[0m23:30:38.425407 [info ] [MainThread]: 
+[0m23:30:38.426534 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:30:38.427518 [info ] [MainThread]: 
+[0m23:30:38.428351 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=10
+[0m23:30:38.429432 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.1329594, "process_in_blocks": "3455", "process_kernel_time": 0.643443, "process_mem_max_rss": "209640", "process_out_blocks": "128", "process_user_time": 6.584171}
+[0m23:30:38.430407 [debug] [MainThread]: Command `cli run` succeeded at 23:30:38.430300 after 1.13 seconds
+[0m23:30:38.431503 [debug] [MainThread]: Flushing usage events
+[0m23:30:38.432919 [debug] [MainThread]: test connection "__test" executing: describe "memory"."test17949294343024923396_test_table_function"."use_table_function"
+[0m23:30:38.434566 [debug] [MainThread]: Acquiring new duckdb connection '_test'
+[0m23:30:38.435871 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:30:38.438061 [debug] [MainThread]: On _test: Close
+[0m23:30:38.439490 [debug] [MainThread]: test connection "__test" executing: describe "memory"."test17949294343024923396_test_table_function"."use_table_function_after_adding_column"
+[0m23:30:38.441070 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:30:38.443484 [debug] [MainThread]: On _test: Close
+[0m23:30:38.446109 [debug] [MainThread]: Dropping schema "database: "memory"
+schema: "test17949294343024923396_test_table_function"
+".
+[0m23:30:38.450736 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:30:38.451978 [debug] [MainThread]: On _test: BEGIN
+[0m23:30:38.453132 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:30:38.455081 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m23:30:38.456210 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:30:38.457031 [debug] [MainThread]: On _test: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "test", "target_name": "default", "connection_name": "_test"} */
+drop schema if exists "memory"."test17949294343024923396_test_table_function" cascade
+[0m23:30:38.458490 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:38.460111 [debug] [MainThread]: On _test: COMMIT
+[0m23:30:38.462016 [debug] [MainThread]: Using duckdb connection "_test"
+[0m23:30:38.464296 [debug] [MainThread]: On _test: COMMIT
+[0m23:30:38.466596 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:30:38.470844 [debug] [MainThread]: On _test: Close
